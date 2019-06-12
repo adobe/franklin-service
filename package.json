@@ -8,6 +8,7 @@
     "test-ci": "npm run test && codecov",
     "lint": "./node_modules/.bin/eslint .",
     "semantic-release": "semantic-release",
+    "semantic-prepare": "node ./build/prepare.js",
     "docs": "npx jsdoc2md -c .jsdoc.json --files 'src/*.js'  > docs/API.md",
     "commit": "git-cz",
     "snyk-protect": "snyk protect",

@@ -48,33 +48,73 @@ jobs:
     - store_artifacts:
         path: junit
 
-  release:
-    executor: node8
+  semantic-release:
+    executor: node10
 
     steps:
-      - setup
-      - run:
-          name: revert changes to package-lock.json
-          command: git checkout -- package-lock.json
+    - setup
+    - run:
+        name: revert changes to package-lock.json
+        command: git checkout -- package-lock.json
 
-      - run:
-          name: Check for Updated Package name
-          command: node -e "if (require('./package.json').name=='@adobe/helix-service') { process.exit(1) };"
+    - run:
+        name: configure wsk
+        command: echo -e "APIHOST=https://adobeioruntime.net\nNAMESPACE=helix\nAUTH=$WSK_AUTH\n" > ~/.wskprops
 
-      - run:
-          name: Semantic Release
-          command: npm run semantic-release
+    - run:
+        name: configure env
+        command: echo -e "LOG_LEVEL=info\n" > .env
+
+    - run:
+        name: Semantic Release
+        command: npm run semantic-release
+    - run:
+        name: Link Sequence (Latest)
+        command: wsk action update --sequence /helix/helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@latest helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@`node -e "console.log(require('./package.json').version)"` --web=true --web-secure=false
+
+    - run:
+        name: Link Sequence (Major)
+        command: wsk action update --sequence /helix/helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@v`node -e "console.log(require('./package.json').version.match(/^[0-9]+/)[0])"` helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@`node -e "console.log(require('./package.json').version)"` --web=true --web-secure=false
+
+    - run:
+        name: Link Sequence (Minor)
+        command: wsk action update --sequence /helix/helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@v`node -e "console.log(require('./package.json').version.match(/^[0-9]+.[0-9]+/)[0])"` helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@`node -e "console.log(require('./package.json').version)"` --web=true --web-secure=false
+
+  branch-deploy:
+    executor: node10
+
+    steps:
+    - setup
+    - run:
+        name: revert changes to package-lock.json
+        command: git checkout -- package-lock.json
+
+    - run:
+        name: configure wsk
+        command: echo -e "APIHOST=https://adobeioruntime.net\nNAMESPACE=helix\nAUTH=$WSK_AUTH\n" > ~/.wskprops
+
+    - run:
+        name: Branch Deployment
+        command: npx wsk-builder -v --deploy --test --name helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@ci$CIRCLE_BUILD_NUM
+
+    - run:
+        name: Link Sequence (CI)
+        command: wsk action update --sequence /helix/helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@ci helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@ci$CIRCLE_BUILD_NUM --web=true --web-secure=false
 
 workflows:
   version: 2
   build:
     jobs:
     - build
-    # the release jobs needs a $NPM_TOKEN and $GH_TOKEN environment to be setup
-    - release:
+    - branch-deploy:
+        requires:
+          - build
+        filters:
+          branches:
+            ignore: master
+    - semantic-release:
         requires:
         - build
         filters:
           branches:
-            # rename to `master` once the tokens have been setup
             only: master

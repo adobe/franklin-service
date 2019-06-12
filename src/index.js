@@ -13,10 +13,12 @@
 /**
  * This is the main function
  * @param {string} name name of the person to greet
- * @returns {string} a greeting
+ * @returns {object} a greeting
  */
 function main(name = 'world') {
-  return `Hello, ${name}.`;
+  return {
+    greeting: `Hello, ${name}.`
+  };
 };
 
 module.exports = { main };

@@ -1,6 +1,6 @@
-# Helix Library
+# Helix Service
 
-> An example library to be used in and with Project Helix
+> An example service to be used in and with Project Helix
 
 ## Status
 [![codecov](https://img.shields.io/codecov/c/github/adobe/helix-service.svg)](https://codecov.io/gh/adobe/helix-service)
@@ -12,30 +12,18 @@
 
 ## Installation
 
-```bash
-$ npm install -S @adobe/helix-service
-```
-
 ## Usage
 
-See the [API documentation](docs/API.md).
+```bash
+curl https://adobeioruntime.net/api/v1/web/helix/default/helix-service
+```
+
+For more, see the [API documentation](docs/API.md).
 
 ## Development
 
-### Build
+### Deploying Helix Static
 
-```bash
-$ npm install
-```
+Deploying Helix Service requires the `wsk` command line client, authenticated to a namespace of your choice. For Project Helix, we use the `helix` namespace.
 
-### Test
-
-```bash
-$ npm test
-```
-
-### Lint
-
-```bash
-$ npm run lint
-```
+All commits to master that pass the testing will be deployed automatically. All commits to branches that will pass the testing will get commited as `/helix-services/service@ci<num>` and tagged with the CI build number.
