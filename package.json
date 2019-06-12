@@ -1,6 +1,6 @@
 {
   "name": "@adobe/helix-service",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Example Package",
   "main": "src/index.js",
   "scripts": {
@@ -67,7 +67,7 @@
     }
   },
   "wsk": {
-    "name": "helix-services/service@0.0.1",
+    "name": "helix-services/service@1.0.0",
     "static": []
   }
 }
