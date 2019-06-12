@@ -15,7 +15,7 @@
  * @param {string} name name of the person to greet
  * @returns {object} a greeting
  */
-function main(name = 'world') {
+function main({ name = 'world' } = {}) {
   return {
     greeting: `Hello, ${name}.`,
   };

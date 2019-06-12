@@ -15,11 +15,16 @@
 'use strict';
 
 const assert = require('assert');
-const index = require('../src/index.js');
+const index = require('../src/index.js').main;
 
 describe('Index Tests', () => {
   it('index function is present', async () => {
+    const result = await index({});
+    assert.deepEqual(result, { greeting: 'Hello, world.' });
+  });
+
+  it('index function returns an object', async () => {
     const result = await index();
-    assert.equal(result, 'Hello, world.');
+    assert.equal(typeof result, 'object');
   });
 });
