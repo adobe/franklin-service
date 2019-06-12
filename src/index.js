@@ -17,7 +17,7 @@
  */
 function main({ name = 'world' } = {}) {
   return {
-    greeting: `Hello, ${name}.`,
+    body: `Hello, ${name}.`,
   };
 }
 
