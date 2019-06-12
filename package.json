@@ -12,7 +12,9 @@
     "docs": "npx jsdoc2md -c .jsdoc.json --files 'src/*.js'  > docs/API.md",
     "commit": "git-cz",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "build": "wsk-builder -v",
+    "deploy": "wsk-builder -v --deploy --test"
   },
   "repository": {
     "type": "git",
