@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/adobe/helix-service/compare/v1.0.1...v1.1.0) (2019-06-12)
+
+
+### Features
+
+* **action:** turn action into a web action ([f41f212](https://github.com/adobe/helix-service/commit/f41f212))
+
 ## [1.0.1](https://github.com/adobe/helix-service/compare/v1.0.0...v1.0.1) (2019-06-12)
 
 
