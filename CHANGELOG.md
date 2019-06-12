@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/adobe/helix-service/compare/v1.0.0...v1.0.1) (2019-06-12)
+
+
+### Bug Fixes
+
+* **build:** add missing dependency ([aa163d7](https://github.com/adobe/helix-service/commit/aa163d7))
+
 # 1.0.0 (2019-06-12)
 
 
