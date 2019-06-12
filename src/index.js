@@ -17,8 +17,8 @@
  */
 function main(name = 'world') {
   return {
-    greeting: `Hello, ${name}.`
+    greeting: `Hello, ${name}.`,
   };
-};
+}
 
 module.exports = { main };
