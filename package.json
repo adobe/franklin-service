@@ -1,5 +1,5 @@
 {
-  "name": "@adobe/helix-library",
+  "name": "@adobe/helix-service",
   "version": "0.0.1",
   "description": "Example Package",
   "main": "src/index.js",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adobe/helix-library"
+    "url": "https://github.com/adobe/helix-service"
   },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/adobe/helix-library/issues"
+    "url": "https://github.com/adobe/helix-service/issues"
   },
-  "homepage": "https://github.com/adobe/helix-library#readme",
+  "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {},
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.2",

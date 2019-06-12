@@ -59,7 +59,7 @@ jobs:
 
       - run:
           name: Check for Updated Package name
-          command: node -e "if (require('./package.json').name=='@adobe/helix-library') { process.exit(1) };"
+          command: node -e "if (require('./package.json').name=='@adobe/helix-service') { process.exit(1) };"
 
       - run:
           name: Semantic Release
