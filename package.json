@@ -65,5 +65,9 @@
     "ghooks": {
       "pre-commit": "npx lint-staged"
     }
+  },
+  "wsk": {
+    "name": "helix-services/service@0.0.1",
+    "static": []
   }
 }
