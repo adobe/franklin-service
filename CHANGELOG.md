@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/adobe/helix-service/compare/v1.1.0...v1.1.1) (2019-06-17)
+
+
+### Bug Fixes
+
+* **package.json:** remove redundant istanbul dependency and use latest nyc ([b29f97d](https://github.com/adobe/helix-service/commit/b29f97d)), closes [#4](https://github.com/adobe/helix-service/issues/4)
+
 # [1.1.0](https://github.com/adobe/helix-service/compare/v1.0.1...v1.1.0) (2019-06-12)
 
 
