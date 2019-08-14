@@ -1,119 +1,108 @@
-
 version: 2.1
 executors:
   node10:
     docker:
-    - image: trieloff/githop:node
-      environment:
-        NPM_CONFIG_PREFIX: "~/.npm-global"
+      - image: circleci/node:10
+        environment:
+          NPM_CONFIG_PREFIX: "~/.npm-global"
     working_directory: ~/repo
 
 commands:
   setup:
     steps:
-    - checkout
-    # - restore_cache:
-    #     keys:
-    #     - v1-dependencies-{{ arch }}-{{ checksum "package-lock.json" }}
-    - run:
-        name: Installing Dependencies
-        command: npm ci
-    # - save_cache:
-    #     paths:
-    #     - node_modules
-    #     key: v1-dependencies-{{ arch }}-{{ checksum "package-lock.json" }}
-    - run:
-        name: prepare test git user
-        command: git config --global user.email "circleci@example.com" && git config --global user.name "CircleCi Build"
+      - checkout
+      - restore_cache:
+          keys:
+            - v3-dependencies-{{ arch }}-{{ checksum "package-lock.json" }}
+      - run:
+          name: install npm 6.9.0
+          command: sudo npm -g install npm@6.9.0
+      - run:
+          name: Installing Dependencies
+          command: npm ci
+      - save_cache:
+          paths:
+            - node_modules
+          key: v3-dependencies-{{ arch }}-{{ checksum "package-lock.json" }}
+      - run:
+          name: prepare test git user
+          command: git config --global user.email "circleci@example.com" && git config --global user.name "CircleCi Build"
 
 jobs:
   build:
     executor: node10
-
     steps:
-    - setup
-    - run: mkdir junit
-    - run:
-        name: Lint
-        command: npm run lint
-
-    - run:
-        name: Getting Code Coverage
-        command: npm run test-ci
-
-    - store_test_results:
-        path: junit
-
-    - store_artifacts:
-        path: junit
+      - setup
+      - run: mkdir junit
+      - run:
+          name: Lint
+          command: npm run lint
+      - run:
+          name: Getting Code Coverage
+          command: npm run test-ci
+      - store_test_results:
+          path: junit
+      - store_artifacts:
+          path: junit
 
   semantic-release:
     executor: node10
-
     steps:
-    - setup
-    - run:
-        name: revert changes to package-lock.json
-        command: git checkout -- package-lock.json
-
-    - run:
-        name: configure wsk
-        command: echo -e "APIHOST=https://adobeioruntime.net\nNAMESPACE=helix\nAUTH=$WSK_AUTH\n" > ~/.wskprops
-
-    - run:
-        name: configure env
-        command: echo -e "LOG_LEVEL=info\n" > .env
-
-    - run:
-        name: Semantic Release
-        command: npm run semantic-release
-    - run:
-        name: Link Sequence (Latest)
-        command: wsk action update --sequence /helix/helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@latest helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@`node -e "console.log(require('./package.json').version)"` --web=true --web-secure=false
-
-    - run:
-        name: Link Sequence (Major)
-        command: wsk action update --sequence /helix/helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@v`node -e "console.log(require('./package.json').version.match(/^[0-9]+/)[0])"` helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@`node -e "console.log(require('./package.json').version)"` --web=true --web-secure=false
-
-    - run:
-        name: Link Sequence (Minor)
-        command: wsk action update --sequence /helix/helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@v`node -e "console.log(require('./package.json').version.match(/^[0-9]+.[0-9]+/)[0])"` helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@`node -e "console.log(require('./package.json').version)"` --web=true --web-secure=false
+      - setup
+      - run:
+          name: revert changes to package-lock.json
+          command: git checkout -- package-lock.json
+      - run:
+          name: configure wsk
+          command: echo -e "APIHOST=https://adobeioruntime.net\nNAMESPACE=helix\nAUTH=$WSK_AUTH\n" > ~/.wskprops
+      - run:
+          name: configure env
+          command: echo -e "LOG_LEVEL=info\n" > .env
+      - run:
+          name: Semantic Release
+          command: npm run semantic-release
+      - run:
+          name: Post-Deployment Integration Test
+          command: npm run test-postdeploy
+      - store_test_results:
+          path: junit
+      - run:
+          name: Link Sequences
+          command: npm run deploy-sequences
 
   branch-deploy:
     executor: node10
-
     steps:
-    - setup
-    - run:
-        name: revert changes to package-lock.json
-        command: git checkout -- package-lock.json
-
-    - run:
-        name: configure wsk
-        command: echo -e "APIHOST=https://adobeioruntime.net\nNAMESPACE=helix\nAUTH=$WSK_AUTH\n" > ~/.wskprops
-
-    - run:
-        name: Branch Deployment
-        command: npx wsk-builder -v --deploy --test --name helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@ci$CIRCLE_BUILD_NUM
-
-    - run:
-        name: Link Sequence (CI)
-        command: wsk action update --sequence /helix/helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@ci helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@ci$CIRCLE_BUILD_NUM --web=true --web-secure=false
+      - setup
+      - run:
+          name: revert changes to package-lock.json
+          command: git checkout -- package-lock.json
+      - run:
+          name: configure wsk
+          command: echo -e "APIHOST=https://adobeioruntime.net\nNAMESPACE=helix\nAUTH=$WSK_AUTH\n" > ~/.wskprops
+      - run:
+          name: Branch Deployment
+          command: npm run deploy-ci
+      - run:
+          name: Post-Deployment Integration Test
+          command: npm run test-postdeploy
+      - store_test_results:
+          path: junit
 
 workflows:
   version: 2
   build:
     jobs:
-    - build
-    - branch-deploy:
-        requires:
-          - build
-        filters:
-          branches:
-            ignore: master
-    - semantic-release:
-        requires:
-        - build
-        filters:
-          branches:
-            only: master
+      - build
+      - branch-deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              ignore: master
+      - semantic-release:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
