@@ -10,6 +10,7 @@
  * governing permissions and limitations under the License.
  */
 
+const { wrap } = require('@adobe/helix-status');
 /**
  * This is the main function
  * @param {string} name name of the person to greet
@@ -21,4 +22,4 @@ function main({ name = 'world' } = {}) {
   };
 }
 
-module.exports = { main };
+module.exports = { main: wrap(main) };

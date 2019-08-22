@@ -27,7 +27,9 @@
     "url": "https://github.com/adobe/helix-service/issues"
   },
   "homepage": "https://github.com/adobe/helix-service#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@adobe/helix-status": "4.2.0"
+  },
   "devDependencies": {
     "@adobe/eslint-config-helix": "^1.0.0",
     "@adobe/openwhisk-action-builder": "^2.0.0",
