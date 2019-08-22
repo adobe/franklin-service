@@ -12,8 +12,6 @@
     "semantic-release": "semantic-release",
     "docs": "npx jsdoc2md -c .jsdoc.json --files 'src/*.js'  > docs/API.md",
     "commit": "git-cz",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect",
     "build": "wsk-builder -v",
     "deploy": "wsk-builder -v --deploy --test=/_status_check/pingdom.xml",
     "deploy-sequences": "wsk-builder --no-build -no-hints -l latest -l major -l minor",
@@ -50,10 +48,8 @@
     "lodash": "^4.17.15",
     "mocha": "^6.2.0",
     "nyc": "^14.1.1",
-    "semantic-release": "^15.13.21",
-    "snyk": "^1.216.4"
+    "semantic-release": "^15.13.21"
   },
-  "snyk": true,
   "lint-staged": {
     "*.js": "eslint"
   },
