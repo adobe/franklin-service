@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/adobe/helix-service/compare/v1.1.2...v1.2.0) (2019-08-22)
+
+
+### Features
+
+* **monitoring:** add helix-status library to enable monitoring ([ef72300](https://github.com/adobe/helix-service/commit/ef72300))
+
 ## [1.1.2](https://github.com/adobe/helix-service/compare/v1.1.1...v1.1.2) (2019-07-24)
 
 
