@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/adobe/helix-service/compare/v1.2.0...v1.2.1) (2019-09-03)
+
+
+### Bug Fixes
+
+* **package:** update @adobe/helix-status to version 4.2.1 ([f7ab47a](https://github.com/adobe/helix-service/commit/f7ab47a))
+
 # [1.2.0](https://github.com/adobe/helix-service/compare/v1.1.2...v1.2.0) (2019-08-22)
 
 
