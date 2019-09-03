@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
-    "@adobe/helix-status": "4.2.0"
+    "@adobe/helix-status": "4.2.1"
   },
   "devDependencies": {
     "@adobe/eslint-config-helix": "^1.0.0",
