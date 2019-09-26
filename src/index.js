@@ -9,7 +9,7 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-
+const initfastly = require('@adobe/fastly-native-promises');
 const { wrap } = require('@adobe/helix-status');
 const { execute } = require('./sendquery');
 
@@ -23,7 +23,22 @@ function cleanParams(params){
     }, {});
 }
 
+async function authFastly(token, service){
+  // verify Fastly credentials
+  const Fastly = await initfastly(token, service);
+  await Fastly.getVersions();
+  return true;
+};
+
 async function main(params) {
+  try {
+    await authFastly(params.token, params.service);
+  } catch (e){
+    return {
+      statusCode: 401, 
+      body: e.message
+    }
+  }
   try {
     const results = await execute(
       params.GOOGLE_CLIENT_EMAIL,

@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
-    "@adobe/fastly-native-promises": "^1.11.0",
+    "@adobe/fastly-native-promises": "^1.13.0",
     "@adobe/helix-shared": "^3.0.0",
     "@adobe/helix-status": "^4.1.0",
     "@google-cloud/bigquery": "^4.1.8",
