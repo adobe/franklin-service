@@ -1,7 +1,6 @@
-# Helix Service
+# Helix Queries
 
-> An example service to be used in and with Project Helix
-
+> An action that queries Google Bigquery
 ## Status
 [![codecov](https://img.shields.io/codecov/c/github/adobe/helix-service.svg)](https://codecov.io/gh/adobe/helix-service)
 [![CircleCI](https://img.shields.io/circleci/project/github/adobe/helix-service.svg)](https://circleci.com/gh/adobe/helix-service)
