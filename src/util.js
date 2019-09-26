@@ -9,28 +9,12 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
+const dotenv = require('dotenv');
 
-const { wrap } = require('@adobe/helix-status');
-const { execute } = require('./sendquery');
+dotenv.config();
 
-async function main(params) {
-  try {
-    const results = await execute(
-      params.GOOGLE_CLIENT_EMAIL,
-      params.GOOGLE_PRIVATE_KEY,
-      params.GOOGLE_PROJECT_ID,
-      'list-everything',
-      { params }
-    );
-    return {
-      results
-    }
-  } catch (e) {
-    console.error(e);
-    return {
-      statusCode: e.statusCode || 500,
-    };
-  }
-}
-
-module.exports = { main: wrap(main) };
+module.exports = {
+  email: process.env.GOOGLE_CLIENT_EMAIL,
+  key: process.env.GOOGLE_PRIVATE_KEY,
+  projectid: process.env.GOOGLE_PROJECT_ID,
+};
