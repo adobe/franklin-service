@@ -18,5 +18,5 @@ module.exports = {
   key: process.env.GOOGLE_PRIVATE_KEY,
   projectid: process.env.GOOGLE_PROJECT_ID,
   token: process.env.HLX_FASTLY_AUTH,
-  service: '0bxMEaYAJV6SoqFlbZ2n1f'
+  service: '0bxMEaYAJV6SoqFlbZ2n1f',
 };

@@ -19,15 +19,13 @@ const send = require('../src/sendquery.js');
 describe('bigquery tests', () => {
   it('runs a query', async () => {
     const result = await send.execute(util.email, util.key, util.projectid, 'list-everything', '0bxMEaYAJV6SoqFlbZ2n1f');
-    console.log(typeof result);
     assert.ok(Array.isArray(result));
   }).timeout(5000);
 
   it('runs a query with params', async () => {
     const result = await send.execute(util.email, util.key, util.projectid, 'list-everything', '0bxMEaYAJV6SoqFlbZ2n1f', {
-      limit: 10
+      limit: 10,
     });
-    console.table(result);
     assert.ok(Array.isArray(result));
     assert.equal(result.length, 10);
   }).timeout(5000);
@@ -36,9 +34,9 @@ describe('bigquery tests', () => {
     try {
       await send.execute(util.email, util.key, undefined, 'list-everything', '0bxMEaYAJV6SoqFlbZ2n1f');
       assert.fail('expected exception not thrown');
-    } catch (e){
+    } catch (e) {
       if (e instanceof AssertionError) {
-        //bubble up the assertion error
+        // bubble up the assertion error
         throw e;
       }
     }
@@ -48,14 +46,13 @@ describe('bigquery tests', () => {
     try {
       await send.execute(util.email, util.key, util.projectid, 'break-something', '0bxMEaYAJV6SoqFlbZ2n1f');
       assert.fail('expected exception not thrown');
-    } catch (e){
+    } catch (e) {
       if (e instanceof AssertionError) {
-        //bubble up the assertion error
+        // bubble up the assertion error
         throw e;
       }
     }
   }).timeout(5000);
-  
 });
 
 describe('sql loading tests', () => {
@@ -64,4 +61,3 @@ describe('sql loading tests', () => {
     assert.ok(result.match(/select/i));
   });
 });
-

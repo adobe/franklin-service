@@ -13,31 +13,32 @@ const initfastly = require('@adobe/fastly-native-promises');
 const { wrap } = require('@adobe/helix-status');
 const { execute } = require('./sendquery');
 
-function cleanParams(params){
+function cleanParams(params) {
   return Object.keys(params)
-    .filter(key => !key.match(/[A-Z0-9_]+/))
-    .filter(key => !key.startsWith('__'))
+    .filter((key) => !key.match(/[A-Z0-9_]+/))
+    .filter((key) => !key.startsWith('__'))
     .reduce((cleanedobj, key) => {
+      // eslint-disable-next-line no-param-reassign
       cleanedobj[key] = params[key];
       return cleanedobj;
     }, {});
 }
 
-async function authFastly(token, service){
+async function authFastly(token, service) {
   // verify Fastly credentials
   const Fastly = await initfastly(token, service);
   await Fastly.getVersions();
   return true;
-};
+}
 
 async function main(params) {
   try {
     await authFastly(params.token, params.service);
-  } catch (e){
+  } catch (e) {
     return {
-      statusCode: 401, 
-      body: e.message
-    }
+      statusCode: 401,
+      body: e.message,
+    };
   }
   try {
     const results = await execute(
@@ -46,22 +47,21 @@ async function main(params) {
       params.GOOGLE_PROJECT_ID,
       params.__ow_path,
       params.service,
-      cleanParams(params)
+      cleanParams(params),
     );
     return {
       headers: {
-        'content-type': 'application/json'
+        'content-type': 'application/json',
       },
       body: {
-        results
-      }
-    }
+        results,
+      },
+    };
   } catch (e) {
-    console.error(e);
     return {
       statusCode: e.statusCode || 500,
     };
   }
 }
 
-module.exports = { main: wrap(main) , cleanParams };
+module.exports = { main: wrap(main), cleanParams };
