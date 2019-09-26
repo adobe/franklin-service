@@ -1,5 +1,4 @@
-# Helix Queries
-
+# Helix Run Query
 > An action that queries Google Bigquery
 ## Status
 [![codecov](https://img.shields.io/codecov/c/github/adobe/helix-service.svg)](https://codecov.io/gh/adobe/helix-service)
