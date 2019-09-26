@@ -20,10 +20,15 @@ async function main(params) {
       params.GOOGLE_PRIVATE_KEY,
       params.GOOGLE_PROJECT_ID,
       'list-everything',
-      { params }
+      params.params
     );
     return {
-      results
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: {
+        results
+      }
     }
   } catch (e) {
     console.error(e);

@@ -16,15 +16,38 @@
 
 const assert = require('assert');
 const index = require('../src/index.js').main;
+const util = require('../src/util.js');
 
 describe('Index Tests', () => {
   it('index function is present', async () => {
-    const result = await index({});
-    assert.deepEqual(result, { body: 'Hello, world.' });
-  });
+    const result = await index({
+      GOOGLE_CLIENT_EMAIL: util.email, 
+      GOOGLE_PRIVATE_KEY: util.key, 
+      GOOGLE_PROJECT_ID: util.projectid,
+      params: { limit: 10 }
+    });
+  }).timeout(2000);
 
   it('index function returns an object', async () => {
-    const result = await index();
+    const result = await index({
+      GOOGLE_CLIENT_EMAIL: util.email, 
+      GOOGLE_PRIVATE_KEY: util.key, 
+      GOOGLE_PROJECT_ID: util.projectid,
+      params: { limit: 10 }
+    });
     assert.equal(typeof result, 'object');
-  });
+    assert.ok(Array.isArray(result.body.results));
+  }).timeout(2000);
+
+  it('index function returns 500 on error', async () => {
+    const result = await index({
+      GOOGLE_CLIENT_EMAIL: util.email, 
+      GOOGLE_PRIVATE_KEY: 'util.key', 
+      params: { limit: 10 }
+    });
+    assert.equal(typeof result, 'object');
+    assert.equal(result.statusCode, 500)
+  }).timeout(2000);
+
+  
 });
