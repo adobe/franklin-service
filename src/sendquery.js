@@ -27,20 +27,31 @@ function loadQuery(query){
  */
 async function execute(email, key, project, query, params = {
   limit: 100
-}) {
+}, service) {
   try {
     const credentials = await auth(email, key);
     const bq = new BigQuery({
       projectId: project,
       credentials,
     });
-    const results = await bq.query({
-      query: loadQuery(query),
-      params
-    }); 
-    return results[0];
+    const [dataset] = await bq.dataset('helix_logging_' + service, {
+      location: 'US'
+    }).get();
+
+    return new Promise((resolve, reject) => {
+      const results = [];
+
+      dataset.createQueryStream({
+        query: loadQuery(query),
+        maxResults: params.limit,
+        params
+      })
+      .on('data', row => results.push(row))
+      .on('error', e => reject(e))
+      .on('end', () => resolve(results));
+    });
   } catch (e) {
-    console.error(e);
+    //console.error(e);
     throw e;
   }
 }

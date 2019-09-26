@@ -26,7 +26,8 @@ describe('Index Tests', () => {
       GOOGLE_PRIVATE_KEY: util.key, 
       GOOGLE_PROJECT_ID: util.projectid,
       __ow_path: 'list-everything',
-      limit: 10
+      limit: 10,
+      service: '0bxMEaYAJV6SoqFlbZ2n1f'
     });
   }).timeout(5000);
 
@@ -36,10 +37,12 @@ describe('Index Tests', () => {
       GOOGLE_PRIVATE_KEY: util.key, 
       GOOGLE_PROJECT_ID: util.projectid,
       __ow_path: 'list-everything', 
-      limit: 10
+      limit: 10,
+      service: '0bxMEaYAJV6SoqFlbZ2n1f'
     });
     assert.equal(typeof result, 'object');
     assert.ok(Array.isArray(result.body.results));
+    assert.equal(result.body.results.length, 10);
   }).timeout(5000);
 
   it('index function returns 500 on error', async () => {
