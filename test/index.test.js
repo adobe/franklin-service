@@ -16,6 +16,7 @@
 
 const assert = require('assert');
 const index = require('../src/index.js').main;
+const { cleanParams } = require('../src/index.js');
 const util = require('../src/util.js');
 
 describe('Index Tests', () => {
@@ -24,7 +25,7 @@ describe('Index Tests', () => {
       GOOGLE_CLIENT_EMAIL: util.email, 
       GOOGLE_PRIVATE_KEY: util.key, 
       GOOGLE_PROJECT_ID: util.projectid,
-      params: { limit: 10 }
+      limit: 10
     });
   }).timeout(2000);
 
@@ -33,7 +34,7 @@ describe('Index Tests', () => {
       GOOGLE_CLIENT_EMAIL: util.email, 
       GOOGLE_PRIVATE_KEY: util.key, 
       GOOGLE_PROJECT_ID: util.projectid,
-      params: { limit: 10 }
+      limit: 10
     });
     assert.equal(typeof result, 'object');
     assert.ok(Array.isArray(result.body.results));
@@ -43,11 +44,30 @@ describe('Index Tests', () => {
     const result = await index({
       GOOGLE_CLIENT_EMAIL: util.email, 
       GOOGLE_PRIVATE_KEY: 'util.key', 
-      params: { limit: 10 }
+      limit: 10
     });
     assert.equal(typeof result, 'object');
     assert.equal(result.statusCode, 500)
   }).timeout(2000);
+});
 
-  
+describe('testing cleanParams', () => {
+  it('cleanParams returns Object', () => {
+    const result = cleanParams({});
+    console.log(result);
+    assert.equal(typeof result, 'object');
+    assert.ok(!Array.isArray(result));
+  });
+
+  it('cleanParams returns clean Object', () => {
+    const result = cleanParams({
+      FOOBAR: 'ahhhh', 
+      foobar: 'good',
+      __foobar: 'bad'
+    });
+    console.log(result);
+    assert.deepStrictEqual(result, {
+      foobar: 'good'
+    });
+  });
 });
