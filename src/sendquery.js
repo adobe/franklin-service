@@ -25,9 +25,9 @@ function loadQuery(query){
  * @param {string} project the Google project ID
  * @param {string} query the query from a .sql file
  */
-async function execute(email, key, project, query, service, params = {
+async function execute(email, key, project, query, params = {
   limit: 100
-}) {
+}, service) {
   try {
     const credentials = await auth(email, key);
     const bq = new BigQuery({
