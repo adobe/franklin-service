@@ -15,7 +15,7 @@ dotenv.config();
 
 module.exports = {
   email: process.env.GOOGLE_CLIENT_EMAIL,
-  key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+  key: process.env.GOOGLE_PRIVATE_KEY,
   projectid: process.env.GOOGLE_PROJECT_ID,
   token: process.env.HLX_FASTLY_AUTH,
   service: '0bxMEaYAJV6SoqFlbZ2n1f',
