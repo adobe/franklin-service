@@ -16,78 +16,15 @@
 
 const assert = require('assert');
 const index = require('../src/index.js').main;
-const { cleanParams } = require('../src/index.js');
-const util = require('../src/util.js');
 
 describe('Index Tests', () => {
   it('index function is present', async () => {
-    await index({
-      GOOGLE_CLIENT_EMAIL: util.email,
-      GOOGLE_PRIVATE_KEY: util.key,
-      GOOGLE_PROJECT_ID: util.projectid,
-      token: util.token,
-      __ow_path: 'list-everything',
-      limit: 10,
-      service: '0bxMEaYAJV6SoqFlbZ2n1f',
-    });
-  }).timeout(5000);
+    const result = await index({});
+    assert.deepEqual(result, { body: 'Hello, world.' });
+  });
 
   it('index function returns an object', async () => {
-    const result = await index({
-      GOOGLE_CLIENT_EMAIL: util.email,
-      GOOGLE_PRIVATE_KEY: util.key,
-      GOOGLE_PROJECT_ID: util.projectid,
-      token: util.token,
-      __ow_path: 'list-everything',
-      limit: 10,
-      service: '0bxMEaYAJV6SoqFlbZ2n1f',
-    });
+    const result = await index();
     assert.equal(typeof result, 'object');
-    assert.ok(Array.isArray(result.body.results));
-    assert.equal(result.body.results.length, 10);
-  }).timeout(5000);
-
-  it('index function returns 500 on error', async () => {
-    const result = await index({
-      GOOGLE_CLIENT_EMAIL: util.email,
-      GOOGLE_PRIVATE_KEY: 'util.key',
-      token: util.token,
-      __ow_path: 'break-something',
-      service: '0bxMEaYAJV6SoqFlbZ2n1f',
-      limit: 10,
-    });
-    assert.equal(typeof result, 'object');
-    assert.equal(result.statusCode, 500);
-  });
-  it('index function returns 401 on auth error', async () => {
-    const result = await index({
-      GOOGLE_CLIENT_EMAIL: util.email,
-      GOOGLE_PRIVATE_KEY: 'util.key',
-      token: 'notatoken',
-      __ow_path: 'break-something',
-      service: '0bxMEaYAJV6SoqFlbZ2n1f',
-      limit: 10,
-    });
-    assert.equal(typeof result, 'object');
-    assert.equal(result.statusCode, 401);
-  });
-});
-
-describe('testing cleanParams', () => {
-  it('cleanParams returns Object', () => {
-    const result = cleanParams({});
-    assert.equal(typeof result, 'object');
-    assert.ok(!Array.isArray(result));
-  });
-
-  it('cleanParams returns clean Object', () => {
-    const result = cleanParams({
-      FOOBAR: 'ahhhh',
-      foobar: 'good',
-      __foobar: 'bad',
-    });
-    assert.deepStrictEqual(result, {
-      foobar: 'good',
-    });
   });
 });
