@@ -13,16 +13,6 @@
 const { wrap } = require('@adobe/helix-status');
 const { execute } = require('./sendquery');
 
-function cleanParams(params){
-  return Object.keys(params)
-    .filter(key => !key.match(/[A-Z0-9_]+/))
-    .filter(key => !key.startsWith('__'))
-    .reduce((cleanedobj, key) => {
-      cleanedobj[key] = params[key];
-      return cleanedobj;
-    }, {});
-}
-
 async function main(params) {
   try {
     const results = await execute(
@@ -30,7 +20,7 @@ async function main(params) {
       params.GOOGLE_PRIVATE_KEY,
       params.GOOGLE_PROJECT_ID,
       'list-everything',
-      cleanParams(params)
+      params.params
     );
     return {
       headers: {
@@ -48,4 +38,4 @@ async function main(params) {
   }
 }
 
-module.exports = { main: wrap(main) , cleanParams };
+module.exports = { main: wrap(main) };
