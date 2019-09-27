@@ -11,6 +11,8 @@
  */
 
 const { wrap } = require('@adobe/helix-status');
+const { openWhiskWrapper } = require('epsagon');
+
 /**
  * This is the main function
  * @param {string} name name of the person to greet
@@ -22,4 +24,11 @@ function main({ name = 'world' } = {}) {
   };
 }
 
-module.exports = { main: wrap(main) };
+module.exports = {
+  main: wrap(openWhiskWrapper(main, {
+    token_param: 'EPSAGON_TOKEN',
+    appName: 'Helix Services',
+    metadataOnly: false,
+    ignoredKeys: [/^[A-Z0-9_]+$/, 'token'],
+  })),
+};
