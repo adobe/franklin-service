@@ -9,28 +9,6 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-
-const { wrap } = require('@adobe/helix-status');
-const { execute } = require('./sendquery');
-
-async function main(params) {
-  try {
-    const results = await execute(
-      params.GOOGLE_CLIENT_EMAIL,
-      params.GOOGLE_PRIVATE_KEY,
-      params.GOOGLE_PROJECT_ID,
-      'list-everything',
-      { params }
-    );
-    return {
-      results
-    }
-  } catch (e) {
-    console.error(e);
-    return {
-      statusCode: e.statusCode || 500,
-    };
-  }
-}
-
-module.exports = { main: wrap(main) };
+module.exports.nextResource = (table, state) => `select top 1 req_url from ${table}, count(req_url) 
+    where req_http_Referer like "%${state}%" group by req_url
+    order by count(req_url)`;

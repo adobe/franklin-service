@@ -10,6 +10,7 @@
  * governing permissions and limitations under the License.
  */
 const { BigQuery } = require('@google-cloud/bigquery');
+const nextResource = require('./next-resource');
 const { auth } = require('./auth.js');
 const fs = require('fs-extra');
 const path = require('path');
@@ -23,7 +24,6 @@ function loadQuery(query){
  * @param {string} email email address of the Google service account
  * @param {string} key private key of the global Google service account
  * @param {string} project the Google project ID
- * @param {string} query the query from a .sql file
  */
 async function execute(email, key, project, query, params = {
   limit: 100
