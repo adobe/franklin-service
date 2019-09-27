@@ -25,33 +25,30 @@ describe('Index Tests', () => {
       GOOGLE_CLIENT_EMAIL: util.email, 
       GOOGLE_PRIVATE_KEY: util.key, 
       GOOGLE_PROJECT_ID: util.projectid,
-      __ow_path: 'list-everything',
       limit: 10
     });
-  }).timeout(5000);
+  }).timeout(2000);
 
   it('index function returns an object', async () => {
     const result = await index({
       GOOGLE_CLIENT_EMAIL: util.email, 
       GOOGLE_PRIVATE_KEY: util.key, 
       GOOGLE_PROJECT_ID: util.projectid,
-      __ow_path: 'list-everything', 
       limit: 10
     });
     assert.equal(typeof result, 'object');
     assert.ok(Array.isArray(result.body.results));
-  }).timeout(5000);
+  }).timeout(2000);
 
   it('index function returns 500 on error', async () => {
     const result = await index({
       GOOGLE_CLIENT_EMAIL: util.email, 
-      GOOGLE_PRIVATE_KEY: 'util.key',
-      __ow_path: 'list-everything', 
+      GOOGLE_PRIVATE_KEY: 'util.key', 
       limit: 10
     });
     assert.equal(typeof result, 'object');
     assert.equal(result.statusCode, 500)
-  });
+  }).timeout(2000);
 });
 
 describe('testing cleanParams', () => {
