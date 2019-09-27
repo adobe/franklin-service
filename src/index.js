@@ -30,8 +30,8 @@ async function main(params) {
       params.GOOGLE_PRIVATE_KEY,
       params.GOOGLE_PROJECT_ID,
       params.__ow_path,
-      params.service,
-      cleanParams(params)
+      cleanParams(params),
+      params.service
     );
     return {
       headers: {
