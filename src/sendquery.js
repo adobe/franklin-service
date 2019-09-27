@@ -10,12 +10,12 @@
  * governing permissions and limitations under the License.
  */
 const { BigQuery } = require('@google-cloud/bigquery');
+const { auth } = require('./auth.js');
 const fs = require('fs-extra');
 const path = require('path');
-const { auth } = require('./auth.js');
 
-function loadQuery(query) {
-  return fs.readFileSync(path.resolve(__dirname, 'queries', `${query}.sql`)).toString();
+function loadQuery(query){
+  return fs.readFileSync(path.resolve(__dirname, 'queries', query + '.sql')).toString();
 }
 
 /**
@@ -26,7 +26,7 @@ function loadQuery(query) {
  * @param {string} query the query from a .sql file
  */
 async function execute(email, key, project, query, service, params = {
-  limit: 100,
+  limit: 100
 }) {
   try {
     const credentials = await auth(email, key);
@@ -34,8 +34,8 @@ async function execute(email, key, project, query, service, params = {
       projectId: project,
       credentials,
     });
-    const [dataset] = await bq.dataset(`helix_logging_${service}`, {
-      location: 'US',
+    const [dataset] = await bq.dataset('helix_logging_' + service, {
+      location: 'US'
     }).get();
 
     return new Promise((resolve, reject) => {
@@ -44,14 +44,15 @@ async function execute(email, key, project, query, service, params = {
       dataset.createQueryStream({
         query: loadQuery(query),
         maxResults: params.limit,
-        params,
+        params
       })
-        .on('data', (row) => results.push(row))
-        .on('error', (e) => reject(e))
-        .on('end', () => resolve(results));
+      .on('data', row => results.push(row))
+      .on('error', e => reject(e))
+      .on('end', () => resolve(results));
     });
   } catch (e) {
-    throw new Error(`Unable to execute Google Query: ${e.message}`);
+    //console.error(e);
+    throw e;
   }
 }
 
