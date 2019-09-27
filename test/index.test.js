@@ -25,7 +25,6 @@ describe('Index Tests', () => {
       GOOGLE_CLIENT_EMAIL: util.email, 
       GOOGLE_PRIVATE_KEY: util.key, 
       GOOGLE_PROJECT_ID: util.projectid,
-      token: util.token,
       __ow_path: 'list-everything',
       limit: 10,
       service: '0bxMEaYAJV6SoqFlbZ2n1f'
@@ -37,7 +36,6 @@ describe('Index Tests', () => {
       GOOGLE_CLIENT_EMAIL: util.email, 
       GOOGLE_PRIVATE_KEY: util.key, 
       GOOGLE_PROJECT_ID: util.projectid,
-      token: util.token,
       __ow_path: 'list-everything', 
       limit: 10,
       service: '0bxMEaYAJV6SoqFlbZ2n1f'
@@ -51,25 +49,11 @@ describe('Index Tests', () => {
     const result = await index({
       GOOGLE_CLIENT_EMAIL: util.email, 
       GOOGLE_PRIVATE_KEY: 'util.key',
-      token: util.token,
-      __ow_path: 'break-something', 
-      service: '0bxMEaYAJV6SoqFlbZ2n1f',
+      __ow_path: 'list-everything', 
       limit: 10
     });
     assert.equal(typeof result, 'object');
     assert.equal(result.statusCode, 500)
-  });
-  it('index function returns 401 on auth error', async () => {
-    const result = await index({
-      GOOGLE_CLIENT_EMAIL: util.email, 
-      GOOGLE_PRIVATE_KEY: 'util.key',
-      token: 'notatoken',
-      __ow_path: 'break-something', 
-      service: '0bxMEaYAJV6SoqFlbZ2n1f',
-      limit: 10
-    });
-    assert.equal(typeof result, 'object');
-    assert.equal(result.statusCode, 401)
   });
 });
 
