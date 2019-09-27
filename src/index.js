@@ -9,59 +9,17 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-const initfastly = require('@adobe/fastly-native-promises');
+
 const { wrap } = require('@adobe/helix-status');
-const { execute } = require('./sendquery');
-
-function cleanParams(params) {
-  return Object.keys(params)
-    .filter((key) => !key.match(/[A-Z0-9_]+/))
-    .filter((key) => !key.startsWith('__'))
-    .reduce((cleanedobj, key) => {
-      // eslint-disable-next-line no-param-reassign
-      cleanedobj[key] = params[key];
-      return cleanedobj;
-    }, {});
+/**
+ * This is the main function
+ * @param {string} name name of the person to greet
+ * @returns {object} a greeting
+ */
+function main({ name = 'world' } = {}) {
+  return {
+    body: `Hello, ${name}.`,
+  };
 }
 
-async function authFastly(token, service) {
-  // verify Fastly credentials
-  const Fastly = await initfastly(token, service);
-  await Fastly.getVersions();
-  return true;
-}
-
-async function main(params) {
-  try {
-    await authFastly(params.token, params.service);
-  } catch (e) {
-    return {
-      statusCode: 401,
-      body: e.message,
-    };
-  }
-  try {
-    const results = await execute(
-      params.GOOGLE_CLIENT_EMAIL,
-      params.GOOGLE_PRIVATE_KEY,
-      params.GOOGLE_PROJECT_ID,
-      params.__ow_path,
-      params.service,
-      cleanParams(params),
-    );
-    return {
-      headers: {
-        'content-type': 'application/json',
-      },
-      body: {
-        results,
-      },
-    };
-  } catch (e) {
-    return {
-      statusCode: e.statusCode || 500,
-    };
-  }
-}
-
-module.exports = { main: wrap(main), cleanParams };
+module.exports = { main: wrap(main) };
