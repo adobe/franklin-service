@@ -28,7 +28,7 @@ describe('bigquery tests', () => {
     });
     assert.ok(Array.isArray(result));
     assert.equal(result.length, 10);
-  }).timeout(150000);
+  }).timeout(5000);
 
   it('throws without projectid', async () => {
     try {
