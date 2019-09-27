@@ -18,35 +18,23 @@ const send = require('../src/sendquery.js');
 
 describe('bigquery tests', () => {
   it('runs a query', async () => {
-    const result = await send.execute(util.email, util.key, util.projectid, 'list-everything', undefined, '0bxMEaYAJV6SoqFlbZ2n1f');
+    const result = await send.execute(util.email, util.key, util.projectid, 'list-everything');
     console.log(typeof result);
     assert.ok(Array.isArray(result));
-  }).timeout(5000);
+  });
 
   it('runs a query with params', async () => {
     const result = await send.execute(util.email, util.key, util.projectid, 'list-everything', {
       limit: 10
-    }, '0bxMEaYAJV6SoqFlbZ2n1f');
+    });
     console.table(result);
     assert.ok(Array.isArray(result));
     assert.equal(result.length, 10);
-  }).timeout(5000);
+  });
 
   it('throws without projectid', async () => {
     try {
       await send.execute(util.email, util.key, undefined, 'list-everything');
-      assert.fail('expected exception not thrown');
-    } catch (e){
-      if (e instanceof AssertionError) {
-        //bubble up the assertion error
-        throw e;
-      }
-    }
-  }).timeout(5000);
-
-  it('throws with bad query', async () => {
-    try {
-      await send.execute(util.email, util.key, util.projectid, 'break-something');
       assert.fail('expected exception not thrown');
     } catch (e){
       if (e instanceof AssertionError) {
