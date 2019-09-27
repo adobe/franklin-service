@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/adobe/helix-service/compare/v1.3.0...v1.4.0) (2019-09-27)
+
+
+### Features
+
+* **monitoring:** add epsagon tracing ([f490d82](https://github.com/adobe/helix-service/commit/f490d82))
+
 ## [1.2.1](https://github.com/adobe/helix-service/compare/v1.2.0...v1.2.1) (2019-09-03)
 
 
