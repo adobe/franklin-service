@@ -29,7 +29,7 @@ async function main(params) {
       params.GOOGLE_CLIENT_EMAIL,
       params.GOOGLE_PRIVATE_KEY,
       params.GOOGLE_PROJECT_ID,
-      params.__ow_path,
+      'list-everything',
       cleanParams(params)
     );
     return {
