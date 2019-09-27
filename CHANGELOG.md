@@ -1,19 +1,3 @@
-# [1.3.0](https://github.com/adobe/helix-service/compare/v1.2.1...v1.3.0) (2019-09-27)
-
-
-### Bug Fixes
-
-* **test:** fix linebreaks ([78771fd](https://github.com/adobe/helix-service/commit/78771fd))
-
-
-### Features
-
-* **auth:** add fastly authentication ([733d340](https://github.com/adobe/helix-service/commit/733d340))
-* **index:** allow specifying query in path ([a20dfa3](https://github.com/adobe/helix-service/commit/a20dfa3))
-* **index:** clean parameters ([8372db1](https://github.com/adobe/helix-service/commit/8372db1))
-* **query:** run simple queries ([e834508](https://github.com/adobe/helix-service/commit/e834508))
-* **query:** set the default dataset to the current service config id ([cb432a7](https://github.com/adobe/helix-service/commit/cb432a7))
-
 ## [1.2.1](https://github.com/adobe/helix-service/compare/v1.2.0...v1.2.1) (2019-09-03)
 
 
