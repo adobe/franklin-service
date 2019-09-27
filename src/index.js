@@ -11,26 +11,15 @@
  */
 
 const { wrap } = require('@adobe/helix-status');
-const { execute } = require('./sendquery');
-
-async function main(params) {
-  try {
-    const results = await execute(
-      params.GOOGLE_CLIENT_EMAIL,
-      params.GOOGLE_PRIVATE_KEY,
-      params.GOOGLE_PROJECT_ID,
-      'list-everything',
-      { params }
-    );
-    return {
-      results
-    }
-  } catch (e) {
-    console.error(e);
-    return {
-      statusCode: e.statusCode || 500,
-    };
-  }
+/**
+ * This is the main function
+ * @param {string} name name of the person to greet
+ * @returns {object} a greeting
+ */
+function main({ name = 'world' } = {}) {
+  return {
+    body: `Hello, ${name}.`,
+  };
 }
 
 module.exports = { main: wrap(main) };

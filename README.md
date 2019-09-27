@@ -15,7 +15,7 @@
 ## Usage
 
 ```bash
-curl https://adobeioruntime.net/api/v1/web/helix/helix-query-nextresource/helix-query-nextresource@v1
+curl https://adobeioruntime.net/api/v1/web/helix/helix-services/service@v1
 ```
 
 For more, see the [API documentation](docs/API.md).
