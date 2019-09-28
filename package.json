@@ -67,5 +67,12 @@
   "wsk": {
     "name": "helix-services/service@${version}",
     "static": []
+  },
+  "statuspage": {
+    "name": "Helix Service",
+    "group": "Development|Publishing|Delivery"
+  },
+  "newrelic": {
+    "group_policy": "Development|Publishing|Delivery Repeated Failure"
   }
 }
