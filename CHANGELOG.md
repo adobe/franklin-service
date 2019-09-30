@@ -1,3 +1,11 @@
+## [1.4.1](https://github.com/adobe/helix-service/compare/v1.4.0...v1.4.1) (2019-09-30)
+
+
+### Bug Fixes
+
+* **monitoring:** use correct .bin path ([a4388e8](https://github.com/adobe/helix-service/commit/a4388e8))
+* **package:** update @adobe/helix-status to version 5.0.0 ([401c589](https://github.com/adobe/helix-service/commit/401c589))
+
 # [1.4.0](https://github.com/adobe/helix-service/compare/v1.3.0...v1.4.0) (2019-09-27)
 
 
