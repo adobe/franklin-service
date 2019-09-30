@@ -22,7 +22,7 @@ For more, see the [API documentation](docs/API.md).
 
 ## Development
 
-### Deploying Helix Static
+### Deploying Helix Service
 
 Deploying Helix Service requires the `wsk` command line client, authenticated to a namespace of your choice. For Project Helix, we use the `helix` namespace.
 

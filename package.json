@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
-    "@adobe/helix-status": "4.3.6",
+    "@adobe/helix-status": "5.0.1",
     "epsagon": "^1.37.0"
   },
   "devDependencies": {
@@ -67,5 +67,12 @@
   "wsk": {
     "name": "helix-services/service@${version}",
     "static": []
+  },
+  "statuspage": {
+    "name": "Helix Service",
+    "group": "Development|Publishing|Delivery"
+  },
+  "newrelic": {
+    "group_policy": "Development|Publishing|Delivery Repeated Failure"
   }
 }
