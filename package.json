@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
-    "@adobe/helix-status": "5.1.0",
+    "@adobe/helix-status": "5.1.1",
     "epsagon": "1.37.1"
   },
   "devDependencies": {
