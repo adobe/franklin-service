@@ -1,3 +1,10 @@
+## [1.4.5](https://github.com/adobe/helix-service/compare/v1.4.4...v1.4.5) (2019-10-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-status to v5.2.0 ([#43](https://github.com/adobe/helix-service/issues/43)) ([d5e7605](https://github.com/adobe/helix-service/commit/d5e7605a14cfa00a459e7b4ec3c07eb0bda9dc05))
+
 ## [1.4.4](https://github.com/adobe/helix-service/compare/v1.4.3...v1.4.4) (2019-10-17)
 
 
