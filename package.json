@@ -32,8 +32,8 @@
   },
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
-    "@adobe/helix-status": "5.2.0",
-    "epsagon": "1.39.0"
+    "@adobe/helix-status": "5.3.0",
+    "epsagon": "1.40.0"
   },
   "devDependencies": {
     "@adobe/eslint-config-helix": "1.1.0",
