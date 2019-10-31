@@ -1,3 +1,10 @@
+## [1.4.6](https://github.com/adobe/helix-service/compare/v1.4.5...v1.4.6) (2019-10-31)
+
+
+### Bug Fixes
+
+* **deps:** update any ([#45](https://github.com/adobe/helix-service/issues/45)) ([802ccf9](https://github.com/adobe/helix-service/commit/802ccf956bcf39713923e60504670fab803ccda1))
+
 ## [1.4.5](https://github.com/adobe/helix-service/compare/v1.4.4...v1.4.5) (2019-10-22)
 
 
