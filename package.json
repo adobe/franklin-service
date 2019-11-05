@@ -67,12 +67,5 @@
     "ghooks": {
       "pre-commit": "npx lint-staged"
     }
-  },
-  "statuspage": {
-    "name": "Helix Service",
-    "group": "Development|Publishing|Delivery"
-  },
-  "newrelic": {
-    "group_policy": "Development|Publishing|Delivery Repeated Failure"
   }
 }
