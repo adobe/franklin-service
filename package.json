@@ -33,14 +33,14 @@
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
     "@adobe/helix-status": "5.3.0",
-    "epsagon": "1.40.0"
+    "epsagon": "1.40.4"
   },
   "devDependencies": {
     "@adobe/eslint-config-helix": "1.1.0",
     "@adobe/openwhisk-action-builder": "2.1.1",
     "@semantic-release/changelog": "3.0.5",
     "@semantic-release/exec": "3.3.8",
-    "@semantic-release/git": "7.0.17",
+    "@semantic-release/git": "7.0.18",
     "@semantic-release/github": "5.5.5",
     "ajv": "6.10.2",
     "codecov": "3.6.1",
@@ -55,7 +55,7 @@
     "lodash": "4.17.15",
     "mocha": "6.2.2",
     "nyc": "14.1.1",
-    "semantic-release": "15.13.28"
+    "semantic-release": "15.13.30"
   },
   "lint-staged": {
     "*.js": "eslint"
