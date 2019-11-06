@@ -7,6 +7,9 @@ executors:
           NPM_CONFIG_PREFIX: "~/.npm-global"
     working_directory: ~/repo
 
+orbs:
+  helix-post-deploy: rofe/helix-post-deploy@1.0.2
+
 commands:
   setup:
     steps:
@@ -52,12 +55,8 @@ jobs:
       - run:
           name: revert changes to package-lock.json
           command: git checkout -- package-lock.json
-      - run:
-          name: configure wsk
-          command: echo -e "APIHOST=https://adobeioruntime.net\nNAMESPACE=helix\nAUTH=$WSK_AUTH\n" > ~/.wskprops
-      - run:
-          name: configure env
-          command: echo -e "LOG_LEVEL=info\n" > .env
+      - helix-post-deploy/config-wsk
+      - helix-post-deploy/config-env
       - run:
           name: Semantic Release
           command: npm run semantic-release
@@ -69,9 +68,7 @@ jobs:
       - run:
           name: Link Sequences
           command: npm run deploy-sequences
-      - run:
-          name: Set Up Monitoring
-          command: node ./node_modules/.bin/newrelic setup https://adobeioruntime.net/api/v1/web/helix/helix-services/`node -e "console.log(require('./package.json').name.replace('@adobe/helix-', ''))"`@v`node -e "console.log(require('./package.json').version.match(/^[0-9]+.[0-9]+/)[0])"`/_status_check/healthcheck.json `node ./node_modules/.bin/statuspage setup --silent`
+      - helix-post-deploy/monitoring
 
   branch-deploy:
     executor: node10
