@@ -77,9 +77,7 @@ jobs:
       - run:
           name: revert changes to package-lock.json
           command: git checkout -- package-lock.json
-      - run:
-          name: configure wsk
-          command: echo -e "APIHOST=https://adobeioruntime.net\nNAMESPACE=helix\nAUTH=$WSK_AUTH\n" > ~/.wskprops
+      - helix-post-deploy/config-wsk
       - run:
           name: Branch Deployment
           command: npm run deploy-ci
