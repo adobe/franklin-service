@@ -68,7 +68,14 @@ jobs:
       - run:
           name: Link Sequences
           command: npm run deploy-sequences
-      - helix-post-deploy/monitoring
+      # uncomment and adjust to enable monitoring
+      # see https://circleci.com/orbs/registry/orb/adobe/helix-post-deploy
+      # for more available parameters
+      # - helix-post-deploy/monitoring:
+      #     statuspage_name: Helix Service
+      #     statuspage_group: Development|Publishing|Delivery
+      #     newrelic_group_policy: Development|Publishing|Delivery Repeated Failure
+
 
   branch-deploy:
     executor: node10
