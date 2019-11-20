@@ -32,11 +32,12 @@
   },
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
-    "@adobe/helix-status": "6.0.2",
+    "@adobe/helix-status": "7.0.1",
     "epsagon": "1.42.0"
   },
   "devDependencies": {
     "@adobe/eslint-config-helix": "1.1.0",
+    "@adobe/helix-ops": "1.0.1",
     "@adobe/openwhisk-action-builder": "2.3.1",
     "@semantic-release/changelog": "3.0.5",
     "@semantic-release/exec": "3.3.8",
