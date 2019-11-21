@@ -1,0 +1,72 @@
+{
+  "name": "@adobe/helix-service",
+  "version": "1.4.9",
+  "private": true,
+  "description": "Example Helix Service",
+  "main": "src/index.js",
+  "scripts": {
+    "test": " nyc --reporter=text --reporter=lcov -i -g 'Post-Deploy' --check-coverage --branches 100 --statements 100 --lines 100 mocha",
+    "test-ci": "nyc --reporter=text --reporter=lcov -i -g 'Post-Deploy' --check-coverage --branches 100 --statements 100 --lines 100 mocha --reporter xunit --reporter-options output=./junit/test-results.xml && codecov",
+    "test-postdeploy": "mocha --reporter xunit --reporter-options output=./junit/test-results.xml -g 'Post-Deploy'",
+    "lint": "./node_modules/.bin/eslint .",
+    "semantic-release": "semantic-release",
+    "docs": "npx jsdoc2md -c .jsdoc.json --files 'src/*.js'  > docs/API.md",
+    "commit": "git-cz",
+    "build": "wsk-builder -v",
+    "deploy": "wsk-builder -v --deploy --test=/_status_check/healthcheck.json",
+    "deploy-sequences": "wsk-builder --no-build -no-hints -l latest -l major -l minor",
+    "deploy-ci": "wsk-builder -v --deploy --test=/_status_check/healthcheck.json --pkgVersion=ci$CIRCLE_BUILD_NUM -l ci"
+  },
+  "wsk": {
+    "name": "helix-services-private/service@${version}",
+    "linksPackage": "helix-services"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adobe/helix-service"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/adobe/helix-service/issues"
+  },
+  "homepage": "https://github.com/adobe/helix-service#readme",
+  "dependencies": {
+    "@adobe/helix-status": "7.0.2",
+    "epsagon": "1.42.0"
+  },
+  "devDependencies": {
+    "@adobe/eslint-config-helix": "1.1.0",
+    "@adobe/helix-ops": "1.0.1",
+    "@adobe/openwhisk-action-builder": "2.3.1",
+    "@semantic-release/changelog": "3.0.5",
+    "@semantic-release/exec": "3.3.8",
+    "@semantic-release/git": "7.0.18",
+    "@semantic-release/github": "5.5.5",
+    "ajv": "6.10.2",
+    "codecov": "3.6.1",
+    "commitizen": "4.0.3",
+    "cz-conventional-changelog": "3.0.2",
+    "eslint": "6.6.0",
+    "eslint-plugin-header": "3.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "jsdoc-to-markdown": "5.0.3",
+    "junit-report-builder": "1.3.3",
+    "lint-staged": "9.4.3",
+    "lodash": "4.17.15",
+    "mocha": "6.2.2",
+    "nyc": "14.1.1",
+    "semantic-release": "15.13.31"
+  },
+  "lint-staged": {
+    "*.js": "eslint"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  }
+}
