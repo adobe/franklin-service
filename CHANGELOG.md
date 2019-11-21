@@ -1,3 +1,10 @@
+## [1.4.9](https://github.com/adobe/helix-service/compare/v1.4.8...v1.4.9) (2019-11-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-status to v7.0.2 ([35e8a4a](https://github.com/adobe/helix-service/commit/35e8a4a0e1d26fb8fede8552504cc5b0df711fbe))
+
 ## [1.4.8](https://github.com/adobe/helix-service/compare/v1.4.7...v1.4.8) (2019-11-20)
 
 
