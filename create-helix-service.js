@@ -11,7 +11,38 @@
  * governing permissions and limitations under the License.
  */
 const init = require('@adobe/create-helix-library');
+const yaml = require('yaml');
+
+function setValue(node, val) {
+  // eslint-disable-next-line no-param-reassign
+  node.value.value = val;
+}
 
 // eslint-disable-next-line no-console
 console.log('Creating a new Helix Service');
-init(__dirname);
+init(__dirname, {
+  '.circleci/config.yml': (buf, answers) => {
+    const doc = yaml.parseDocument(buf.toString());
+    const [name, group, policy] = doc.contents.items
+      .filter((item) => item.key.value === 'jobs')[0].value.items
+      .filter((item) => item.key.value === 'semantic-release')[0].value.items
+      .filter((item) => item.key.value === 'steps')[0].value.items
+      .filter((item) => item.type === 'MAP' && item.items && item.items[0] && item.items[0].key.value === 'helix-post-deploy/monitoring')[0].items[0].value.items;
+
+    setValue(name, answers.title);
+    setValue(group, answers.alertgroup);
+    setValue(policy, `${answers.alertgroup} Repeated Failure`);
+
+    return Buffer.from(doc.toString());
+  },
+}, [
+  {
+    type: 'list',
+    name: 'alertgroup',
+    message: 'What kind of service is this?',
+    choices: [
+      'Development', 'Publishing', 'Delivery',
+    ],
+    default: 'Development',
+  },
+]);
