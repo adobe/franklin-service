@@ -100,12 +100,14 @@ workflows:
     jobs:
       - build
       - branch-deploy:
+          context: Project Helix
           requires:
             - build
           filters:
             branches:
               ignore: master
       - semantic-release:
+          context: Project Helix
           requires:
             - build
           filters:
