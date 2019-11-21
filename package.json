@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
-    "@adobe/create-helix-library": "^1.2.0",
+    "@adobe/create-helix-library": "^1.2.1",
     "@adobe/helix-status": "7.0.2",
     "epsagon": "1.42.0",
     "yaml": "^1.7.2"
