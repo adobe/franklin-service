@@ -1,9 +1,12 @@
 {
-  "name": "@adobe/helix-service",
+  "name": "@adobe/create-helix-service",
   "version": "1.4.9",
   "private": true,
-  "description": "Example Helix Service",
+  "description": "Create Helix Service",
   "main": "src/index.js",
+  "bin": {
+    "create-helix-service": "create-helix-service.js"
+  },
   "scripts": {
     "test": " nyc --reporter=text --reporter=lcov -i -g 'Post-Deploy' --check-coverage --branches 100 --statements 100 --lines 100 mocha",
     "test-ci": "nyc --reporter=text --reporter=lcov -i -g 'Post-Deploy' --check-coverage --branches 100 --statements 100 --lines 100 mocha --reporter xunit --reporter-options output=./junit/test-results.xml && codecov",
@@ -32,6 +35,7 @@
   },
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
+    "@adobe/create-helix-library": "^1.1.1",
     "@adobe/helix-status": "7.0.2",
     "epsagon": "1.42.0"
   },
