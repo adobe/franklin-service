@@ -2,8 +2,7 @@
 # NOTE: this is the circleci config which is used to publish @adobe/create-helix-service
 # to NPM. The circleci config for the actual service to be created is in templates/.circleci
 # and will be patched.
-# 
-
+#
 version: 2.1
 executors:
   node8:
@@ -77,7 +76,9 @@ workflows:
     jobs:
     - build
     # the release jobs needs a $NPM_TOKEN and $GH_TOKEN environment to be setup
+    # but this should be covered by the CircleCI contexts setting below
     - release:
+        context: Project Helix
         requires:
         - build
         filters:
