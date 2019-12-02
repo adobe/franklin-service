@@ -1,7 +1,7 @@
 {
   "name": "@adobe/create-helix-service",
   "version": "1.5.0",
-  "private": true,
+  "private": false,
   "description": "Create Helix Service",
   "main": "src/index.js",
   "bin": {
