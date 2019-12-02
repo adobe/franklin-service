@@ -1,3 +1,21 @@
+# [1.5.0](https://github.com/adobe/helix-service/compare/v1.4.9...v1.5.0) (2019-12-02)
+
+
+### Bug Fixes
+
+* **init:** add missing gitignore ([0cd2a74](https://github.com/adobe/helix-service/commit/0cd2a7414dfcd865bd74128436a5cecf2a60bd3a))
+* **init:** add missing npmignore file ([537517b](https://github.com/adobe/helix-service/commit/537517b97524cec9cca958ae3cba41232f6e674d))
+* **init:** update to init package with npmignore fix ([9fb08d8](https://github.com/adobe/helix-service/commit/9fb08d8a0386412dd851bfcba64fb86e0644c864))
+* **template:** use correct argument order to exclude post-deploy tests ([57c8170](https://github.com/adobe/helix-service/commit/57c81704b750533f725f17060d343b40f008d626))
+
+
+### Features
+
+* **circleci:** use contexts for env vars ([d54f2af](https://github.com/adobe/helix-service/commit/d54f2af4ef787831b86b0d50b134aa91fc077493))
+* **init:** add patching of circleci config ([7d95909](https://github.com/adobe/helix-service/commit/7d95909c090d775a37aac8439e45f848ba1cea46))
+* **init:** add template files ([f8d682e](https://github.com/adobe/helix-service/commit/f8d682ecfbfa057a9b18ca6093a2e56487b02b89))
+* **init:** provide init script ([a2a45c4](https://github.com/adobe/helix-service/commit/a2a45c4b535ae5f83e42e353d0b0cbe92dcaae9e))
+
 ## [1.4.9](https://github.com/adobe/helix-service/compare/v1.4.8...v1.4.9) (2019-11-21)
 
 
