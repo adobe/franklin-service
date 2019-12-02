@@ -3,6 +3,7 @@ coverage
 node_modules/
 junit
 .idea
+test
 .snyk
 *.tgz
 build

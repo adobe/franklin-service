@@ -1,6 +1,11 @@
+#
+# NOTE: this is the circleci config which is used to publish @adobe/create-helix-service
+# to NPM. The circleci config for the actual service to be created is in templates/.circleci
+# and will be patched.
+#
 version: 2.1
 executors:
-  node10:
+  node8:
     docker:
       - image: circleci/node:10
         environment:
@@ -13,101 +18,74 @@ orbs:
 commands:
   setup:
     steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - v3-dependencies-{{ arch }}-{{ checksum "package-lock.json" }}
-      - run:
-          name: install npm 6.9.0
-          command: sudo npm -g install npm@6.9.0
-      - run:
-          name: Installing Dependencies
-          command: npm ci
-      - save_cache:
-          paths:
-            - node_modules
-          key: v3-dependencies-{{ arch }}-{{ checksum "package-lock.json" }}
-      - run:
-          name: prepare test git user
-          command: git config --global user.email "circleci@example.com" && git config --global user.name "CircleCi Build"
+    - checkout
+    # - restore_cache:
+    #     keys:
+    #     - v1-dependencies-{{ arch }}-{{ checksum "package-lock.json" }}
+    - run:
+        name: install npm 6.9.0
+        command: sudo npm -g install npm@6.9.0
+    - run:
+        name: Installing Dependencies
+        command: npm ci
+    # - save_cache:
+    #     paths:
+    #     - node_modules
+    #     key: v1-dependencies-{{ arch }}-{{ checksum "package-lock.json" }}
+    - run:
+        name: prepare test git user
+        command: git config --global user.email "circleci@example.com" && git config --global user.name "CircleCi Build"
 
 jobs:
   build:
-    executor: node10
-    steps:
-      - setup
-      - run: mkdir junit
-      - run:
-          name: Lint
-          command: npm run lint
-      - run:
-          name: Getting Code Coverage
-          command: npm run test-ci
-      - store_test_results:
-          path: junit
-      - store_artifacts:
-          path: junit
+    executor: node8
 
-  semantic-release:
-    executor: node10
+    steps:
+    - setup
+    - run: mkdir junit
+    - run:
+        name: Lint
+        command: npm run lint
+
+    - run:
+        name: Getting Code Coverage
+        command: npm run test-ci
+
+    - store_test_results:
+        path: junit
+
+    - store_artifacts:
+        path: junit
+
+  release:
+    executor: node8
+
     steps:
       - setup
       - run:
           name: revert changes to package-lock.json
           command: git checkout -- package-lock.json
-      - helix-post-deploy/config-wsk
-      - helix-post-deploy/config-env
+
+      - run:
+          name: Check for Updated Package name
+          command: node -e "if (require('./package.json').name=='@adobe/helix-library') { process.exit(1) };"
+
       - run:
           name: Semantic Release
           command: npm run semantic-release
-      - run:
-          name: Post-Deployment Integration Test
-          command: npm run test-postdeploy
-      - store_test_results:
-          path: junit
-      - run:
-          name: Link Sequences
-          command: npm run deploy-sequences
-      # uncomment and adjust to enable monitoring
-      # see https://circleci.com/orbs/registry/orb/adobe/helix-post-deploy
-      # for more available parameters
-      # - helix-post-deploy/monitoring:
-      #     statuspage_name: Helix Service
-      #     statuspage_group: Development|Publishing|Delivery
-      #     newrelic_group_policy: Development|Publishing|Delivery Repeated Failure
-
-
-  branch-deploy:
-    executor: node10
-    steps:
-      - setup
-      - run:
-          name: revert changes to package-lock.json
-          command: git checkout -- package-lock.json
-      - helix-post-deploy/config-wsk
-      - run:
-          name: Branch Deployment
-          command: npm run deploy-ci
-      - run:
-          name: Post-Deployment Integration Test
-          command: npm run test-postdeploy
-      - store_test_results:
-          path: junit
 
 workflows:
   version: 2
   build:
     jobs:
-      - build
-      - branch-deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              ignore: master
-      - semantic-release:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
+    - build
+    # the release jobs needs a $NPM_TOKEN and $GH_TOKEN environment to be setup
+    # but this should be covered by the CircleCI contexts setting below
+    - release:
+        context: Project Helix
+        requires:
+        - build
+        filters:
+          branches:
+            # rename to `master` once the tokens have been setup
+            only: master
