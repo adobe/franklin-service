@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/adobe/helix-service/compare/v1.5.0...v1.5.1) (2019-12-02)
+
+
+### Bug Fixes
+
+* **package:** make package public ([640d259](https://github.com/adobe/helix-service/commit/640d2592e85490ef1a91e7e8da06030d163a01a0))
+
 # [1.5.0](https://github.com/adobe/helix-service/compare/v1.4.9...v1.5.0) (2019-12-02)
 
 
