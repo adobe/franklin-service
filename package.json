@@ -32,7 +32,7 @@
   "dependencies": {
     "@adobe/create-helix-library": "1.3.0",
     "@adobe/helix-status": "7.0.2",
-    "epsagon": "1.42.4",
+    "epsagon": "1.43.0",
     "yaml": "^1.7.2"
   },
   "devDependencies": {
@@ -49,7 +49,7 @@
     "cz-conventional-changelog": "3.0.2",
     "eslint": "6.7.2",
     "eslint-plugin-header": "3.0.0",
-    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-import": "2.19.1",
     "jsdoc-to-markdown": "5.0.3",
     "junit-report-builder": "1.3.3",
     "lint-staged": "9.5.0",
