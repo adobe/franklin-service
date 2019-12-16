@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/adobe/helix-service/compare/v1.5.1...v1.5.2) (2019-12-16)
+
+
+### Bug Fixes
+
+* **deps:** update [@adobe](https://github.com/adobe) ([37d9a09](https://github.com/adobe/helix-service/commit/37d9a093d606738b854408ec31248529fa4d9037))
+
 ## [1.5.1](https://github.com/adobe/helix-service/compare/v1.5.0...v1.5.1) (2019-12-02)
 
 
