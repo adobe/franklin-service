@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/adobe/helix-service/compare/v1.5.2...v1.5.3) (2020-01-06)
+
+
+### Bug Fixes
+
+* **deps:** update external ([#76](https://github.com/adobe/helix-service/issues/76)) ([fba7b50](https://github.com/adobe/helix-service/commit/fba7b508e0b30ec5f45e4dce7f7e459cd94219dd))
+
 ## [1.5.2](https://github.com/adobe/helix-service/compare/v1.5.1...v1.5.2) (2019-12-16)
 
 
