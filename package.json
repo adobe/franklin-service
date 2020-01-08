@@ -38,7 +38,7 @@
   "devDependencies": {
     "@adobe/eslint-config-helix": "1.1.0",
     "@adobe/helix-ops": "1.2.0",
-    "@adobe/openwhisk-action-builder": "2.3.4",
+    "@adobe/openwhisk-action-builder": "2.4.0",
     "@semantic-release/changelog": "3.0.6",
     "@semantic-release/exec": "3.3.8",
     "@semantic-release/git": "7.0.18",
