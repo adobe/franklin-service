@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/adobe/helix-service/compare/v1.5.4...v1.6.0) (2020-01-16)
+
+
+### Features
+
+* **tracing:** exclude Coralogix from Epsagon traces ([5052753](https://github.com/adobe/helix-service/commit/5052753f68ee3625dfc96383922c4fd5a9d18f8f)), closes [#81](https://github.com/adobe/helix-service/issues/81)
+
 ## [1.5.4](https://github.com/adobe/helix-service/compare/v1.5.3...v1.5.4) (2020-01-09)
 
 
