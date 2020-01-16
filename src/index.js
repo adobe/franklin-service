@@ -9,8 +9,9 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-
-const { wrap } = require('@adobe/helix-status');
+const { wrap } = require('@adobe/openwhisk-action-utils');
+const { logger } = require('@adobe/openwhisk-action-logger');
+const { wrap: status } = require('@adobe/helix-status');
 const { openWhiskWrapper } = require('epsagon');
 
 /**
@@ -18,17 +19,20 @@ const { openWhiskWrapper } = require('epsagon');
  * @param {string} name name of the person to greet
  * @returns {object} a greeting
  */
-function main({ name = 'world' } = {}) {
+function main({ name = 'world' }) {
   return {
     body: `Hello, ${name}.`,
   };
 }
 
-module.exports = {
-  main: wrap(openWhiskWrapper(main, {
+module.exports.main = wrap(main)
+  .with(openWhiskWrapper, {
     token_param: 'EPSAGON_TOKEN',
     appName: 'Helix Services',
     metadataOnly: false,
     ignoredKeys: [/^[A-Z0-9_]+$/, 'token'],
-  })),
-};
+    urlPatternsToIgnore: ['api.coralogix.com'],
+  })
+  .with(status)
+  .with(logger.trace)
+  .with(logger);
