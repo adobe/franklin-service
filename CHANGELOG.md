@@ -1,3 +1,11 @@
+## [1.6.1](https://github.com/adobe/helix-service/compare/v1.6.0...v1.6.1) (2020-01-16)
+
+
+### Bug Fixes
+
+* **deps:** pin dependencies ([b3564ee](https://github.com/adobe/helix-service/commit/b3564ee428939b5af09cbd5d82b0482a74f0d281))
+* **deps:** update dependency @adobe/openwhisk-action-utils to v4 ([#84](https://github.com/adobe/helix-service/issues/84)) ([314e1b0](https://github.com/adobe/helix-service/commit/314e1b07d90682dbfffd2bfe325e29b537d1e06a))
+
 # [1.6.0](https://github.com/adobe/helix-service/compare/v1.5.4...v1.6.0) (2020-01-16)
 
 
