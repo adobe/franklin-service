@@ -32,8 +32,8 @@
   },
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
-    "@adobe/helix-status": "7.0.3",
-    "@adobe/openwhisk-action-logger": "2.0.3",
+    "@adobe/helix-status": "7.1.0",
+    "@adobe/openwhisk-action-logger": "2.0.4",
     "@adobe/openwhisk-action-utils": "4.0.0",
     "epsagon": "1.48.0"
   },
