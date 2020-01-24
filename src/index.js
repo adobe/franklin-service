@@ -12,7 +12,7 @@
 const { wrap } = require('@adobe/openwhisk-action-utils');
 const { logger } = require('@adobe/openwhisk-action-logger');
 const { wrap: status } = require('@adobe/helix-status');
-const { openWhiskWrapper } = require('epsagon');
+const { epsagon } = require('@adobe/helix-epsagon');
 
 /**
  * This is the main function
@@ -26,13 +26,7 @@ function main({ name = 'world' }) {
 }
 
 module.exports.main = wrap(main)
-  .with(openWhiskWrapper, {
-    token_param: 'EPSAGON_TOKEN',
-    appName: 'Helix Services',
-    metadataOnly: false,
-    ignoredKeys: [/^[A-Z0-9_]+$/, 'token'],
-    urlPatternsToIgnore: ['api.coralogix.com'],
-  })
+  .with(epsagon)
   .with(status)
   .with(logger.trace)
   .with(logger);
