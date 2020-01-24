@@ -1,3 +1,10 @@
+## [1.6.4](https://github.com/adobe/helix-service/compare/v1.6.3...v1.6.4) (2020-01-24)
+
+
+### Bug Fixes
+
+* **init:** ensure dot files are copied by create wizard ([d4f4dbb](https://github.com/adobe/helix-service/commit/d4f4dbb5266efcf30b87d1938bbf2328d8f5fe60)), closes [#93](https://github.com/adobe/helix-service/issues/93)
+
 ## [1.6.3](https://github.com/adobe/helix-service/compare/v1.6.2...v1.6.3) (2020-01-24)
 
 
