@@ -1,3 +1,10 @@
+## [1.6.8](https://github.com/adobe/helix-service/compare/v1.6.7...v1.6.8) (2020-01-30)
+
+
+### Bug Fixes
+
+* **template:** ensure .circleci is released ([9d71b0e](https://github.com/adobe/helix-service/commit/9d71b0e780350d652d729fe196e96ffc481c107c))
+
 ## [1.6.7](https://github.com/adobe/helix-service/compare/v1.6.6...v1.6.7) (2020-01-30)
 
 
