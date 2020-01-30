@@ -4,4 +4,4 @@ junit
 build
 logs
 test-results.xml
-.*
+/.*
