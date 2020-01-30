@@ -5,3 +5,4 @@ build
 logs
 test-results.xml
 /.*
+!.circleci
