@@ -1,3 +1,12 @@
+## [1.6.7](https://github.com/adobe/helix-service/compare/v1.6.6...v1.6.7) (2020-01-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-epsagon to v1.1.2 ([3b32b2f](https://github.com/adobe/helix-service/commit/3b32b2f180a1fbfa75cbc5e88e698f6a579485cd))
+* **deps:** update dependency @adobe/openwhisk-action-utils to v4.1.0 ([a95c367](https://github.com/adobe/helix-service/commit/a95c36792a79ba05a36357bd25bd841e77af0575))
+* **template:** ensure .circleci is released ([9459d10](https://github.com/adobe/helix-service/commit/9459d10fb3d4949bdc1850624ac0f8fdf86995ea)), closes [#102](https://github.com/adobe/helix-service/issues/102)
+
 ## [1.6.6](https://github.com/adobe/helix-service/compare/v1.6.5...v1.6.6) (2020-01-27)
 
 
