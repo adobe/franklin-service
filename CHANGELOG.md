@@ -1,3 +1,10 @@
+## [1.6.11](https://github.com/adobe/helix-service/compare/v1.6.10...v1.6.11) (2020-02-25)
+
+
+### Bug Fixes
+
+* **deps:** update [@adobe](https://github.com/adobe) ([#116](https://github.com/adobe/helix-service/issues/116)) ([3ad2bfa](https://github.com/adobe/helix-service/commit/3ad2bfa468e28e36104bf8484f4f4a86c3620583))
+
 ## [1.6.10](https://github.com/adobe/helix-service/compare/v1.6.9...v1.6.10) (2020-02-03)
 
 
