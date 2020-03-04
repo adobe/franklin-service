@@ -1,3 +1,12 @@
+## [1.6.12](https://github.com/adobe/helix-service/compare/v1.6.11...v1.6.12) (2020-03-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-epsagon to v1.1.4 ([96a1c52](https://github.com/adobe/helix-service/commit/96a1c5204c129bd2c53ad5cc1335c4d8bef76d4c))
+* **deps:** update dependency @adobe/helix-epsagon to v1.1.5 ([44b46e3](https://github.com/adobe/helix-service/commit/44b46e393a948d7594abea7e84495686efa41fc6))
+* **deps:** update dependency @adobe/openwhisk-action-logger to v2.2.0 ([aca65bb](https://github.com/adobe/helix-service/commit/aca65bbb765ab9dc49a10df741c82304f2fceb86))
+
 ## [1.6.11](https://github.com/adobe/helix-service/compare/v1.6.10...v1.6.11) (2020-02-25)
 
 
