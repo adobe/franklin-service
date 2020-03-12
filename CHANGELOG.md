@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/adobe/helix-service/compare/v1.6.13...v1.7.0) (2020-03-12)
+
+
+### Features
+
+* **monitoring:** make incubator default ([48f1d55](https://github.com/adobe/helix-service/commit/48f1d55a0fc82247af0faca10487426644b737c1))
+
 ## [1.6.13](https://github.com/adobe/helix-service/compare/v1.6.12...v1.6.13) (2020-03-10)
 
 
