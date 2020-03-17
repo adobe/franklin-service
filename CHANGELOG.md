@@ -1,3 +1,12 @@
+## [1.7.1](https://github.com/adobe/helix-service/compare/v1.7.0...v1.7.1) (2020-03-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-epsagon to v1.1.6 ([ccb7262](https://github.com/adobe/helix-service/commit/ccb72622cb9091ae53b5fc0417eff90f971d5165))
+* **deps:** update dependency @adobe/helix-epsagon to v1.1.7 ([b4d7c26](https://github.com/adobe/helix-service/commit/b4d7c263ff2df2b79ac6835a70e9e3dd3af04cd0))
+* **deps:** update dependency yaml to v1.8.2 ([#131](https://github.com/adobe/helix-service/issues/131)) ([46f974a](https://github.com/adobe/helix-service/commit/46f974aced560f16f7cb7547b814345ed7afe72f))
+
 # [1.7.0](https://github.com/adobe/helix-service/compare/v1.6.13...v1.7.0) (2020-03-12)
 
 
