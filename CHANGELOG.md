@@ -1,3 +1,15 @@
+# [1.8.0](https://github.com/adobe/helix-service/compare/v1.7.1...v1.8.0) (2020-03-18)
+
+
+### Bug Fixes
+
+* **build:** fix YAML syntax ([1d950c0](https://github.com/adobe/helix-service/commit/1d950c02ab9be98f316762d0dcb36081ebf680d7))
+
+
+### Features
+
+* **build:** add semantic-release-comment-action ([c7a627c](https://github.com/adobe/helix-service/commit/c7a627ca89f2b3455378d1ab41d6cb2212ee5e4d))
+
 ## [1.7.1](https://github.com/adobe/helix-service/compare/v1.7.0...v1.7.1) (2020-03-17)
 
 
