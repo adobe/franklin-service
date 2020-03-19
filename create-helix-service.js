@@ -35,6 +35,17 @@ init(__dirname, {
 
     return Buffer.from(doc.toString());
   },
+  'package.json': (buf, answers) => {
+    const json = JSON.parse(buf.toString());
+    json.name = answers.fullscope;
+    json.description = answers.title;
+    json.repository.url = `https://github.com/${answers.fullname}`;
+    json.bugs.url = `https://github.com/${answers.fullname}/issues`;
+    json.homepage = `https://github.com/${answers.fullname}#readme`;
+
+    json.wsk.name = `helix-services-private/${answers.name}@\${version}`;
+    return Buffer.from(JSON.stringify(json, null, 2));
+  },
 }, [
   {
     type: 'list',
