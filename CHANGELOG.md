@@ -1,3 +1,10 @@
+## [1.8.5](https://github.com/adobe/helix-service/compare/v1.8.4...v1.8.5) (2020-03-19)
+
+
+### Bug Fixes
+
+* **package:** use correct name for template directory ([a0d5ebf](https://github.com/adobe/helix-service/commit/a0d5ebf8d57c6d68f8af156d3b9338eb14377684)), closes [#141](https://github.com/adobe/helix-service/issues/141)
+
 ## [1.8.4](https://github.com/adobe/helix-service/compare/v1.8.3...v1.8.4) (2020-03-19)
 
 
