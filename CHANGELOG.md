@@ -1,3 +1,12 @@
+## [1.8.1](https://github.com/adobe/helix-service/compare/v1.8.0...v1.8.1) (2020-03-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/create-helix-library to v1.4.0 ([439de59](https://github.com/adobe/helix-service/commit/439de5966ceaa1db2e61b5282decc7deee237d13))
+* **deps:** update dependency @adobe/helix-epsagon to v1.1.8 ([086627e](https://github.com/adobe/helix-service/commit/086627e477d8afc1ba3f12ff4dfbba39c85e383f))
+* **index:** set service name property for wsk deployer ([1c1edae](https://github.com/adobe/helix-service/commit/1c1edaebc66fa0b9f313e81e3c56ff191a17d98c)), closes [#103](https://github.com/adobe/helix-service/issues/103)
+
 # [1.8.0](https://github.com/adobe/helix-service/compare/v1.7.1...v1.8.0) (2020-03-18)
 
 
