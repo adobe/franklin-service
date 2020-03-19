@@ -1,3 +1,11 @@
+## [1.8.2](https://github.com/adobe/helix-service/compare/v1.8.1...v1.8.2) (2020-03-19)
+
+
+### Bug Fixes
+
+* **actions:** add main and release workflows for GH actions ([323fa8d](https://github.com/adobe/helix-service/commit/323fa8d534a51242fa67994cc42c85cee60b3b68)), closes [#140](https://github.com/adobe/helix-service/issues/140)
+* **deps:** update dependency @adobe/create-helix-library to v1.4.1 ([841f26e](https://github.com/adobe/helix-service/commit/841f26eac7b002748aac3e5effae4d310ad8561d))
+
 ## [1.8.1](https://github.com/adobe/helix-service/compare/v1.8.0...v1.8.1) (2020-03-19)
 
 
