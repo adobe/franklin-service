@@ -71,6 +71,7 @@
     }
   },
   "files": [
-    ".github"
+    ".github",
+    "templates"
   ]
 }
