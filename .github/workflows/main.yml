@@ -6,11 +6,11 @@ on:
 jobs:
   ci_trigger:
     runs-on: ubuntu-latest
-    name: Comment Semantic Release Status
+    name: Impersonated CI Trigger
     steps:
-      - name: Comment
-        id: comment
-        uses: trieloff/semantic-release-comment-action@master
+      - name: Trigger
+        id: trigger
+        uses: tripodsan/touch-action@v1.5.7
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          user: github-actions
+          repo-token: ${{ secrets.MY_GITHUB_TOKEN }}
+          user: renovate-bot
