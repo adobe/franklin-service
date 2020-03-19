@@ -21,7 +21,7 @@ function setValue(node, val) {
 // eslint-disable-next-line no-console
 console.log('Creating a new Helix Service');
 init(__dirname, {
-  '.circleci/config.yml': (buf, answers) => {
+  'dot-circleci/config.yml': (buf, answers) => {
     const doc = yaml.parseDocument(buf.toString());
     const [name, group, policy] = doc.contents.items
       .filter((item) => item.key.value === 'jobs')[0].value.items
