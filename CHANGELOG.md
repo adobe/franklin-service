@@ -1,3 +1,10 @@
+## [1.8.4](https://github.com/adobe/helix-service/compare/v1.8.3...v1.8.4) (2020-03-19)
+
+
+### Bug Fixes
+
+* **package:** include template directory ([6253c2d](https://github.com/adobe/helix-service/commit/6253c2db01e7dcf6d06b635f7242a2c4bf6f4256)), closes [#141](https://github.com/adobe/helix-service/issues/141)
+
 ## [1.8.3](https://github.com/adobe/helix-service/compare/v1.8.2...v1.8.3) (2020-03-19)
 
 
