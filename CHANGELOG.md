@@ -1,3 +1,10 @@
+## [1.8.6](https://github.com/adobe/helix-service/compare/v1.8.5...v1.8.6) (2020-03-19)
+
+
+### Bug Fixes
+
+* **index:** use correct path for circleci dotfiles ([8bdeb24](https://github.com/adobe/helix-service/commit/8bdeb24affd8c385aa1942778095bab748b2e213)), closes [#142](https://github.com/adobe/helix-service/issues/142)
+
 ## [1.8.5](https://github.com/adobe/helix-service/compare/v1.8.4...v1.8.5) (2020-03-19)
 
 
