@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/adobe/helix-service/compare/v1.8.2...v1.8.3) (2020-03-19)
+
+
+### Bug Fixes
+
+* **index:** include .github directory in NPM distribution ([9c99e25](https://github.com/adobe/helix-service/commit/9c99e25bf6da1331c6b490d12eed21aa2b9f27e1)), closes [#138](https://github.com/adobe/helix-service/issues/138)
+
 ## [1.8.2](https://github.com/adobe/helix-service/compare/v1.8.1...v1.8.2) (2020-03-19)
 
 
