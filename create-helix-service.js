@@ -44,6 +44,9 @@ init(__dirname, {
     json.homepage = `https://github.com/${answers.fullname}#readme`;
 
     json.wsk.name = `helix-services-private/${answers.name}@\${version}`;
+
+    delete json.files;
+
     return Buffer.from(JSON.stringify(json, null, 2));
   },
 }, [

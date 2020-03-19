@@ -69,5 +69,8 @@
     "ghooks": {
       "pre-commit": "npx lint-staged"
     }
-  }
+  },
+  "files": [
+    ".github"
+  ]
 }
