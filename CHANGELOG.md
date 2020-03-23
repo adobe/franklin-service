@@ -1,3 +1,10 @@
+## [1.8.9](https://github.com/adobe/helix-service/compare/v1.8.8...v1.8.9) (2020-03-23)
+
+
+### Bug Fixes
+
+* **npm:** pack test directory ([affc16a](https://github.com/adobe/helix-service/commit/affc16a16f59e28c505a1309b41149217107f9e9)), closes [#149](https://github.com/adobe/helix-service/issues/149)
+
 ## [1.8.8](https://github.com/adobe/helix-service/compare/v1.8.7...v1.8.8) (2020-03-23)
 
 
