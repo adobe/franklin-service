@@ -1,3 +1,17 @@
+## [1.8.8](https://github.com/adobe/helix-service/compare/v1.8.7...v1.8.8) (2020-03-23)
+
+
+### Bug Fixes
+
+* **monitoring:** use latest helix-post-deploy orb which knows about incubator mode ([9537dbe](https://github.com/adobe/helix-service/commit/9537dbe15347555cdbaa012f28ba37629176cffb))
+
+## [1.8.7](https://github.com/adobe/helix-service/compare/v1.8.6...v1.8.7) (2020-03-19)
+
+
+### Bug Fixes
+
+* **package:** include circleci directory ([23a0622](https://github.com/adobe/helix-service/commit/23a06229fcabb2a5e36a3dfd24eeecf4ec7166f8)), closes [#142](https://github.com/adobe/helix-service/issues/142)
+
 ## [1.8.6](https://github.com/adobe/helix-service/compare/v1.8.5...v1.8.6) (2020-03-19)
 
 
