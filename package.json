@@ -73,6 +73,7 @@
   "files": [
     ".github",
     "template",
-    ".circleci"
+    ".circleci",
+    "test"
   ]
 }
