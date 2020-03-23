@@ -1,3 +1,10 @@
+## [1.8.8](https://github.com/adobe/helix-service/compare/v1.8.7...v1.8.8) (2020-03-23)
+
+
+### Bug Fixes
+
+* **monitoring:** use latest helix-post-deploy orb which knows about incubator mode ([9537dbe](https://github.com/adobe/helix-service/commit/9537dbe15347555cdbaa012f28ba37629176cffb))
+
 ## [1.8.7](https://github.com/adobe/helix-service/compare/v1.8.6...v1.8.7) (2020-03-19)
 
 
