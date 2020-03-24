@@ -1,3 +1,31 @@
+## [1.8.12](https://github.com/adobe/helix-service/compare/v1.8.11...v1.8.12) (2020-03-24)
+
+
+### Bug Fixes
+
+* **init:** replace correct monitoring auto params ([e2e7141](https://github.com/adobe/helix-service/commit/e2e71412196f3df99979d075ddc41d70693fc3af))
+
+## [1.8.11](https://github.com/adobe/helix-service/compare/v1.8.10...v1.8.11) (2020-03-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/create-helix-library to v1.4.2 ([#150](https://github.com/adobe/helix-service/issues/150)) ([f33c17d](https://github.com/adobe/helix-service/commit/f33c17de00bc143c64c5d77c432093e1f6203c98))
+
+## [1.8.10](https://github.com/adobe/helix-service/compare/v1.8.9...v1.8.10) (2020-03-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-epsagon to v1.1.9 ([#147](https://github.com/adobe/helix-service/issues/147)) ([6e5f8c0](https://github.com/adobe/helix-service/commit/6e5f8c04ad477e40538d3ff98fee236a2e7648c2))
+
+## [1.8.9](https://github.com/adobe/helix-service/compare/v1.8.8...v1.8.9) (2020-03-23)
+
+
+### Bug Fixes
+
+* **npm:** pack test directory ([affc16a](https://github.com/adobe/helix-service/commit/affc16a16f59e28c505a1309b41149217107f9e9)), closes [#149](https://github.com/adobe/helix-service/issues/149)
+
 ## [1.8.8](https://github.com/adobe/helix-service/compare/v1.8.7...v1.8.8) (2020-03-23)
 
 
