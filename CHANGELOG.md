@@ -1,3 +1,10 @@
+## [1.8.12](https://github.com/adobe/helix-service/compare/v1.8.11...v1.8.12) (2020-03-24)
+
+
+### Bug Fixes
+
+* **init:** replace correct monitoring auto params ([e2e7141](https://github.com/adobe/helix-service/commit/e2e71412196f3df99979d075ddc41d70693fc3af))
+
 ## [1.8.11](https://github.com/adobe/helix-service/compare/v1.8.10...v1.8.11) (2020-03-24)
 
 
