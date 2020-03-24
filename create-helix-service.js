@@ -49,6 +49,16 @@ init(__dirname, {
 
     return Buffer.from(JSON.stringify(json, null, 2));
   },
+  'README.md': (buf, answers) => {
+    const shortname = answers.name.replace('helix-', '');
+    const updated = buf.toString()
+      .replace(/@adobe\/helix-service/g, answers.fullscope)
+      .replace(/Helix Service/g, answers.title)
+      .replace(/An example service to be used in and with Project Helix/g, answers.description)
+      .replace(/helix-services\/service/g, `helix-services/${shortname}`)
+      .replace(/adobe\/helix-service/g, answers.fullname);
+    return Buffer.from(updated);
+  },
 }, [
   {
     type: 'list',
