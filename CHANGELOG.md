@@ -1,3 +1,10 @@
+## [1.8.14](https://github.com/adobe/helix-service/compare/v1.8.13...v1.8.14) (2020-03-24)
+
+
+### Bug Fixes
+
+* **readme:** use correct replacements for readme template ([b87de6c](https://github.com/adobe/helix-service/commit/b87de6cf214de706f17b96fe280234615fcdb44e)), closes [#154](https://github.com/adobe/helix-service/issues/154)
+
 ## [1.8.13](https://github.com/adobe/helix-service/compare/v1.8.12...v1.8.13) (2020-03-24)
 
 
