@@ -1,3 +1,10 @@
+## [1.8.13](https://github.com/adobe/helix-service/compare/v1.8.12...v1.8.13) (2020-03-24)
+
+
+### Bug Fixes
+
+* **deploy:** adjust action name for deployments ([95d69cc](https://github.com/adobe/helix-service/commit/95d69ccdb9e8b744733e069ddd1cb4f2194942a1)), closes [#153](https://github.com/adobe/helix-service/issues/153)
+
 ## [1.8.12](https://github.com/adobe/helix-service/compare/v1.8.11...v1.8.12) (2020-03-24)
 
 
