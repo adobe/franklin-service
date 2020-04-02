@@ -12,9 +12,6 @@ executors:
           NPM_CONFIG_PREFIX: "~/.npm-global"
     working_directory: ~/repo
 
-orbs:
-  helix-post-deploy: adobe/helix-post-deploy@1.4.0
-
 commands:
   setup:
     steps:
