@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Trigger
         id: trigger
-        uses: tripodsan/touch-action@v1.5.7
+        uses: adobe-rnd/github-touch-action@master
         with:
           repo-token: ${{ secrets.MY_GITHUB_TOKEN }}
           user: renovate-bot
