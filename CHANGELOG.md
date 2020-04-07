@@ -1,3 +1,10 @@
+## [1.8.18](https://github.com/adobe/helix-service/compare/v1.8.17...v1.8.18) (2020-04-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/create-helix-library to v1.4.3 ([#167](https://github.com/adobe/helix-service/issues/167)) ([c0bf00c](https://github.com/adobe/helix-service/commit/c0bf00cb3f353f19bc4e40accdba0ca05cc7f964))
+
 ## [1.8.17](https://github.com/adobe/helix-service/compare/v1.8.16...v1.8.17) (2020-04-06)
 
 
