@@ -1,3 +1,10 @@
+## [1.8.22](https://github.com/adobe/helix-service/compare/v1.8.21...v1.8.22) (2020-04-14)
+
+
+### Bug Fixes
+
+* **deploy:** use helix-services package ([#174](https://github.com/adobe/helix-service/issues/174)) ([c053ed9](https://github.com/adobe/helix-service/commit/c053ed9dd821596434c3594ad3257d5aa84666ca))
+
 ## [1.8.21](https://github.com/adobe/helix-service/compare/v1.8.20...v1.8.21) (2020-04-08)
 
 
