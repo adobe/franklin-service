@@ -1,3 +1,10 @@
+## [1.8.24](https://github.com/adobe/helix-service/compare/v1.8.23...v1.8.24) (2020-04-17)
+
+
+### Bug Fixes
+
+* **cfg:** use helix-serives package ([#178](https://github.com/adobe/helix-service/issues/178)) ([25fa3bf](https://github.com/adobe/helix-service/commit/25fa3bfbb3d0f2b5b051372177b87c82a9e430b5))
+
 ## [1.8.23](https://github.com/adobe/helix-service/compare/v1.8.22...v1.8.23) (2020-04-14)
 
 
