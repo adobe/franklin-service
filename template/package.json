@@ -18,8 +18,7 @@
     "deploy-ci": "wsk-builder -v --deploy --test=/_status_check/healthcheck.json --pkgVersion=ci$CIRCLE_BUILD_NUM -l ci"
   },
   "wsk": {
-    "name": "helix-services-private/service@${version}",
-    "linksPackage": "helix-services"
+    "name": "helix-services/service@${version}"
   },
   "repository": {
     "type": "git",
