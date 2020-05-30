@@ -1,3 +1,10 @@
+## [1.8.31](https://github.com/adobe/helix-service/compare/v1.8.30...v1.8.31) (2020-05-30)
+
+
+### Bug Fixes
+
+* **template:** remove greenkeeper badge ([e2cb022](https://github.com/adobe/helix-service/commit/e2cb022a4eb277f57a961b3ae3467e44a25af2c0))
+
 ## [1.8.30](https://github.com/adobe/helix-service/compare/v1.8.29...v1.8.30) (2020-05-26)
 
 
