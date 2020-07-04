@@ -1,3 +1,10 @@
+## [1.8.46](https://github.com/adobe/helix-service/compare/v1.8.45...v1.8.46) (2020-07-04)
+
+
+### Bug Fixes
+
+* **deps:** remove unused junit dependency ([461af53](https://github.com/adobe/helix-service/commit/461af53bbcb22ab1aa4fb46ab59bca783484ac70))
+
 ## [1.8.45](https://github.com/adobe/helix-service/compare/v1.8.44...v1.8.45) (2020-07-02)
 
 
