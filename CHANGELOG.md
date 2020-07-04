@@ -1,3 +1,10 @@
+## [1.8.45](https://github.com/adobe/helix-service/compare/v1.8.44...v1.8.45) (2020-07-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-epsagon to v1.3.13 ([7e76e32](https://github.com/adobe/helix-service/commit/7e76e32eb6c22eaf0df8d61cf63f884de45dad50))
+
 ## [1.8.44](https://github.com/adobe/helix-service/compare/v1.8.43...v1.8.44) (2020-07-02)
 
 
