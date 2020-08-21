@@ -104,11 +104,11 @@ workflows:
             - build
           filters:
             branches:
-              ignore: master
+              ignore: main
       - semantic-release:
           context: Project Helix
           requires:
             - build
           filters:
             branches:
-              only: master
+              only: main
