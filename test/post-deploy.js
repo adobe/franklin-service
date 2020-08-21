@@ -11,13 +11,36 @@
  */
 
 /* eslint-env mocha */
-const assert = require('assert');
+/* eslint-disable no-unused-expressions */
 
-describe('Post-Deploy Tests', () => {
-  it('Service is ready for monitoring', () => {
-    assert.equal(
-      'Not yet, but I will change this line as soon as I am ready',
-      'I am ready to go on call for this',
-    );
-  });
+const chai = require('chai');
+const chaiHttp = require('chai-http');
+const packjson = require('../package.json');
+
+chai.use(chaiHttp);
+const { expect } = chai;
+
+function getbaseurl() {
+  const namespace = 'helix';
+  const package = 'helix-services';
+  const name = packjson.name.replace('@adobe/helix-', '');
+  let version = `${packjson.version}`;
+  if (process.env.CI && process.env.CIRCLE_BUILD_NUM && process.env.CIRCLE_BRANCH !== 'main') {
+    version = `ci${process.env.CIRCLE_BUILD_NUM}`;
+  }
+  return `api/v1/web/${namespace}/${package}/${name}@${version}`;
+}
+
+describe(`Post-Deploy Tests (https://adobeioruntime.net/${getbaseurl()})`, () => {
+  it('Purge a blog post', async () => {
+    await chai
+      .request('https://adobeioruntime.net/')
+      .get(`${getbaseurl()}`)
+      .then((response) => {
+        expect(response).to.have.status(200);
+        expect.fail('Not ready yet');
+      }).catch((e) => {
+        throw e;
+      });
+  }).timeout(50000);
 });

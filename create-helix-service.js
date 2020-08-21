@@ -43,7 +43,7 @@ init(__dirname, {
     json.bugs.url = `https://github.com/${answers.fullname}/issues`;
     json.homepage = `https://github.com/${answers.fullname}#readme`;
 
-    json.wsk.name = `helix-services/${answers.name.replace(/$helix-/, '')}@\${version}`;
+    json.wsk.name = `helix-services/${answers.name.replace(/helix-/, '')}@\${version}`;
 
     delete json.files;
 
