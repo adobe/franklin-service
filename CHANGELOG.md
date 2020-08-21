@@ -1,3 +1,10 @@
+## [1.8.50](https://github.com/adobe/helix-service/compare/v1.8.49...v1.8.50) (2020-08-21)
+
+
+### Bug Fixes
+
+* **git:** use main branch ([1946f79](https://github.com/adobe/helix-service/commit/1946f7945f910b0d3bb8f66615ec9d002ff59497))
+
 ## [1.8.49](https://github.com/adobe/helix-service/compare/v1.8.48...v1.8.49) (2020-08-11)
 
 
