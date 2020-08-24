@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/adobe/helix-service/compare/v1.8.50...v1.9.0) (2020-08-24)
+
+
+### Features
+
+* **test:** use chai-http for post-deploy tests ([d5dd63e](https://github.com/adobe/helix-service/commit/d5dd63ed04b48fc7688b0bc38bb68c579cabbedc))
+
 ## [1.8.50](https://github.com/adobe/helix-service/compare/v1.8.49...v1.8.50) (2020-08-21)
 
 
