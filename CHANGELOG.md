@@ -1,3 +1,10 @@
+## [1.9.4](https://github.com/adobe/helix-service/compare/v1.9.3...v1.9.4) (2020-09-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/openwhisk-action-utils to v4.3.0 ([#258](https://github.com/adobe/helix-service/issues/258)) ([e3cbace](https://github.com/adobe/helix-service/commit/e3cbaceeb2fa3ac1a1941945c2cd8dbdfa3fcb43))
+
 ## [1.9.3](https://github.com/adobe/helix-service/compare/v1.9.2...v1.9.3) (2020-09-03)
 
 
