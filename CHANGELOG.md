@@ -1,3 +1,11 @@
+## [1.9.5](https://github.com/adobe/helix-service/compare/v1.9.4...v1.9.5) (2020-09-14)
+
+
+### Bug Fixes
+
+* **ci:** fix release branch ([92a8e0e](https://github.com/adobe/helix-service/commit/92a8e0eee3f5e205c31554baf9d7c1c2551d3077))
+* **deps:** update dependency @adobe/helix-epsagon to v1.5.2 ([#263](https://github.com/adobe/helix-service/issues/263)) ([93cdac2](https://github.com/adobe/helix-service/commit/93cdac20a0b1e97107cad53426359b341c2d9781))
+
 ## [1.9.4](https://github.com/adobe/helix-service/compare/v1.9.3...v1.9.4) (2020-09-04)
 
 
