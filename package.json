@@ -32,7 +32,7 @@
     "@adobe/create-helix-library": "1.4.5",
     "@adobe/helix-epsagon": "1.5.4",
     "@adobe/helix-status": "8.2.1",
-    "@adobe/openwhisk-action-logger": "2.2.1",
+    "@adobe/openwhisk-action-logger": "2.2.2",
     "@adobe/openwhisk-action-utils": "4.3.1",
     "yaml": "1.10.0"
   },
