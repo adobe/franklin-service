@@ -1,3 +1,10 @@
+## [1.9.24](https://github.com/adobe/helix-service/compare/v1.9.23...v1.9.24) (2021-02-01)
+
+
+### Bug Fixes
+
+* **deps:** update adobe fixes ([#310](https://github.com/adobe/helix-service/issues/310)) ([8103b7d](https://github.com/adobe/helix-service/commit/8103b7dbcb40e093e70dc71d94bfaccd02be4c6b))
+
 ## [1.9.23](https://github.com/adobe/helix-service/compare/v1.9.22...v1.9.23) (2021-01-21)
 
 
