@@ -31,7 +31,7 @@
   "dependencies": {
     "@adobe/create-helix-library": "1.4.5",
     "@adobe/helix-epsagon": "1.5.8",
-    "@adobe/helix-status": "9.0.5",
+    "@adobe/helix-status": "9.0.6",
     "@adobe/openwhisk-action-logger": "2.4.1",
     "@adobe/openwhisk-action-utils": "4.4.1",
     "yaml": "1.10.0"
