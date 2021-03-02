@@ -1,3 +1,10 @@
+## [1.9.33](https://github.com/adobe/helix-service/compare/v1.9.32...v1.9.33) (2021-03-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/create-helix-library to v1.4.6 ([#335](https://github.com/adobe/helix-service/issues/335)) ([9a5e6c4](https://github.com/adobe/helix-service/commit/9a5e6c42f5ae6df902fc4e141283132372431763))
+
 ## [1.9.32](https://github.com/adobe/helix-service/compare/v1.9.31...v1.9.32) (2021-02-26)
 
 
