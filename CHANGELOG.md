@@ -1,3 +1,10 @@
+## [1.9.34](https://github.com/adobe/helix-service/compare/v1.9.33...v1.9.34) (2021-03-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-epsagon to v1.6.0 ([#340](https://github.com/adobe/helix-service/issues/340)) ([553ece3](https://github.com/adobe/helix-service/commit/553ece3a48031dc82bf3853a19159b63a5fc8ccd))
+
 ## [1.9.33](https://github.com/adobe/helix-service/compare/v1.9.32...v1.9.33) (2021-03-02)
 
 
