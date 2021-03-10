@@ -12,21 +12,21 @@
 const { wrap } = require('@adobe/openwhisk-action-utils');
 const { logger } = require('@adobe/openwhisk-action-logger');
 const { wrap: status } = require('@adobe/helix-status');
-const { epsagon } = require('@adobe/helix-epsagon');
+const { Response } = require('@adobe/helix-fetch');
 
 /**
  * This is the main function
- * @param {string} name name of the person to greet
- * @returns {object} a greeting
+ * @param {Request} request the request object (see fetch api)
+ * @param {object} context the context of the universal serverless function
+ * @returns {Response} a g
  */
-function main({ name = 'world' }) {
-  return {
-    body: `Hello, ${name}.`,
-  };
+function main(request, context) {
+  const name = request.url.searchParams.get('name') || 'world';
+  context.log.info(`Saying hello to: ${name}.`);
+  return new Response(`Hello, ${name}.`);
 }
 
 module.exports.main = wrap(main)
-  .with(epsagon)
   .with(status)
   .with(logger.trace)
   .with(logger);
