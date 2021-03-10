@@ -25,14 +25,14 @@ function retrofit(fn) {
       log: params.__ow_logger,
     };
     const resp = await fn({
-      url: `https://helix-service.com/publish?${querystring.encode(params)}`,
+      url: new URL(`https://helix-service.com/publish?${querystring.encode(params)}`),
       headers: new Map(Object.entries(params.__ow_headers || {})),
       json: () => params,
       text: () => JSON.stringify(params),
     }, context);
     return {
       statusCode: resp.status,
-      body: await resp.json(),
+      body: await resp.text(),
       headers: resp.headers.plain(),
     };
   };
