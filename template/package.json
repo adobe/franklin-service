@@ -18,7 +18,8 @@
     "deploy-ci": "hedy -v --deploy --test=/_status_check/healthcheck.json --pkgVersion=ci$CIRCLE_BUILD_NUM -l ci"
   },
   "wsk": {
-    "name": "helix-services/service@${version}"
+    "name": "helix-services/service@${version}",
+    "memory": 256
   },
   "repository": {
     "type": "git",
