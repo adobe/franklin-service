@@ -1,3 +1,10 @@
+## [1.9.41](https://github.com/adobe/helix-service/compare/v1.9.40...v1.9.41) (2021-03-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-status to v9.1.2 ([#352](https://github.com/adobe/helix-service/issues/352)) ([6a311e8](https://github.com/adobe/helix-service/commit/6a311e8329f93153da780e9789f4e53b76446524))
+
 ## [1.9.40](https://github.com/adobe/helix-service/compare/v1.9.39...v1.9.40) (2021-03-23)
 
 
