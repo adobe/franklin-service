@@ -12,19 +12,15 @@
 
 /* eslint-env mocha */
 
-'use strict';
-
 const assert = require('assert');
-const index = require('../src/index.js').main;
+const { retrofit } = require('./utils.js');
+const { main } = require('../src/index.js');
+
+const index = retrofit(main);
 
 describe('Index Tests', () => {
   it('index function is present', async () => {
-    const result = await index({});
-    assert.deepEqual(result, { body: 'Hello, world.' });
-  });
-
-  it('index function returns an object', async () => {
-    const result = await index({});
-    assert.equal(typeof result, 'object');
+    const result = await index();
+    assert.deepEqual(result.body, 'Hello, world.');
   });
 });
