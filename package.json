@@ -30,11 +30,12 @@
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
     "@adobe/create-helix-library": "1.4.6",
-    "dotenv": "8.2.0",
     "@adobe/helix-epsagon": "1.6.1",
+    "@adobe/helix-fetch": "2.2.0",
     "@adobe/helix-status": "9.1.5",
     "@adobe/openwhisk-action-logger": "2.4.3",
     "@adobe/openwhisk-action-utils": "4.4.3",
+    "dotenv": "8.2.0",
     "yaml": "1.10.2"
   },
   "devDependencies": {
