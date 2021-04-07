@@ -1,3 +1,22 @@
+# [2.0.0](https://github.com/adobe/helix-service/compare/v1.9.46...v2.0.0) (2021-04-07)
+
+
+### Bug Fixes
+
+* **deps:** update package dependencies ([e2aebea](https://github.com/adobe/helix-service/commit/e2aebea2e9f5fcc0fa494f466f57a2b113ffa5f9))
+* **package:** use 256 mb by default ([6efff5e](https://github.com/adobe/helix-service/commit/6efff5e48e447c0120642e9b00ccd731cb2fb1b6))
+
+
+### Features
+
+* **support-universal-runtime:** adopt all changes needed for create-helix-service to create universal runtime functions by default ([97e0c3d](https://github.com/adobe/helix-service/commit/97e0c3d8bd4656a9596e40d532d4834defc2f0e3))
+* **template:** add support for google deployments ([f99dd1b](https://github.com/adobe/helix-service/commit/f99dd1b7de5b18bf4496f8a949414363f8735939))
+
+
+### BREAKING CHANGES
+
+* **support-universal-runtime:** switch from openwhisk-action-builder (targeting Adobe I/O Runtime) to helix-deploy (targeting Universal Runtime)
+
 ## [1.9.46](https://github.com/adobe/helix-service/compare/v1.9.45...v1.9.46) (2021-04-05)
 
 
