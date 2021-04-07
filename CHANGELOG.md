@@ -1,3 +1,59 @@
+## [1.9.46](https://github.com/adobe/helix-service/compare/v1.9.45...v1.9.46) (2021-04-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-status to v9.1.5 ([#360](https://github.com/adobe/helix-service/issues/360)) ([089530a](https://github.com/adobe/helix-service/commit/089530af3a0789408df38334de1157532fdc9e85))
+
+## [1.9.45](https://github.com/adobe/helix-service/compare/v1.9.44...v1.9.45) (2021-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update adobe fixes ([#359](https://github.com/adobe/helix-service/issues/359)) ([60fe17f](https://github.com/adobe/helix-service/commit/60fe17fb4cbc271bcdfe116d8e8548d84c55f942))
+
+## [1.9.44](https://github.com/adobe/helix-service/compare/v1.9.43...v1.9.44) (2021-04-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/openwhisk-action-logger to v2.4.2 ([#358](https://github.com/adobe/helix-service/issues/358)) ([e5930b7](https://github.com/adobe/helix-service/commit/e5930b71b9211d95f35d79ab8cc7f9dcc4130804))
+
+## [1.9.43](https://github.com/adobe/helix-service/compare/v1.9.42...v1.9.43) (2021-03-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-epsagon to v1.6.1 ([#356](https://github.com/adobe/helix-service/issues/356)) ([c8ad520](https://github.com/adobe/helix-service/commit/c8ad520f7142a3b093d716cfa8396a940aed75c0))
+
+## [1.9.42](https://github.com/adobe/helix-service/compare/v1.9.41...v1.9.42) (2021-03-27)
+
+
+### Bug Fixes
+
+* **deps:** update adobe fixes ([#353](https://github.com/adobe/helix-service/issues/353)) ([b98a5e0](https://github.com/adobe/helix-service/commit/b98a5e05d66e3816af415f1974a4d987336a286f))
+
+## [1.9.41](https://github.com/adobe/helix-service/compare/v1.9.40...v1.9.41) (2021-03-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-status to v9.1.2 ([#352](https://github.com/adobe/helix-service/issues/352)) ([6a311e8](https://github.com/adobe/helix-service/commit/6a311e8329f93153da780e9789f4e53b76446524))
+
+## [1.9.40](https://github.com/adobe/helix-service/compare/v1.9.39...v1.9.40) (2021-03-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-status to v9.1.1 ([#350](https://github.com/adobe/helix-service/issues/350)) ([9219ba9](https://github.com/adobe/helix-service/commit/9219ba9dd30e6f8c1960fc7066600d0660b208ef))
+
+## [1.9.39](https://github.com/adobe/helix-service/compare/v1.9.38...v1.9.39) (2021-03-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency yaml to v1.10.2 ([#347](https://github.com/adobe/helix-service/issues/347)) ([f738fc3](https://github.com/adobe/helix-service/commit/f738fc3ea28c880d58ee349982965d4b0d929788))
+
 ## [1.9.38](https://github.com/adobe/helix-service/compare/v1.9.37...v1.9.38) (2021-03-10)
 
 
