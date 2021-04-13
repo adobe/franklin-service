@@ -1,3 +1,10 @@
+## [2.0.5](https://github.com/adobe/helix-service/compare/v2.0.4...v2.0.5) (2021-04-13)
+
+
+### Bug Fixes
+
+* use helix-universal ([4ee63d7](https://github.com/adobe/helix-service/commit/4ee63d71aaab83a8af083902ab8711febce6e5ea))
+
 ## [2.0.4](https://github.com/adobe/helix-service/compare/v2.0.3...v2.0.4) (2021-04-12)
 
 
