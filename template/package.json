@@ -32,14 +32,14 @@
   },
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
-    "@adobe/helix-fetch": "2.2.0",
+    "@adobe/helix-shared": "7.24.0",
     "@adobe/helix-status": "9.1.6",
-    "@adobe/openwhisk-action-logger": "2.4.4",
-    "@adobe/openwhisk-action-utils": "4.4.4"
+    "@adobe/helix-universal": "1.0.0",
+    "@adobe/helix-universal-logger": "1.0.2"
   },
   "devDependencies": {
     "@adobe/eslint-config-helix": "1.1.4",
-    "@adobe/helix-deploy": "3.18.6",
+    "@adobe/helix-deploy": "4.0.1",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/exec": "5.0.0",
     "@semantic-release/git": "9.0.0",

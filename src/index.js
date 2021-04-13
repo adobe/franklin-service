@@ -9,16 +9,16 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-const { wrap } = require('@adobe/openwhisk-action-utils');
-const { logger } = require('@adobe/openwhisk-action-logger');
+const { wrap } = require('@adobe/helix-shared');
+const { logger } = require('@adobe/helix-universal-logger');
 const { wrap: status } = require('@adobe/helix-status');
-const { Response } = require('@adobe/helix-fetch');
+const { Response } = require('@adobe/helix-universal');
 
 /**
  * This is the main function
  * @param {Request} request the request object (see fetch api)
- * @param {object} context the context of the universal serverless function
- * @returns {Response} a g
+ * @param {UniversalContext} context the context of the universal serverless function
+ * @returns {Response} a response
  */
 function main(request, context) {
   const name = request.url.searchParams.get('name') || 'world';
