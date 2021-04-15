@@ -1,3 +1,10 @@
+## [2.0.7](https://github.com/adobe/helix-service/compare/v2.0.6...v2.0.7) (2021-04-15)
+
+
+### Bug Fixes
+
+* **template:** add renovate config template ([f0222a0](https://github.com/adobe/helix-service/commit/f0222a01c2253b7bbcb6baa93962561fecd0e39c))
+
 ## [2.0.6](https://github.com/adobe/helix-service/compare/v2.0.5...v2.0.6) (2021-04-15)
 
 
