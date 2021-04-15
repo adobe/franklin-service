@@ -1,3 +1,10 @@
+## [2.0.6](https://github.com/adobe/helix-service/compare/v2.0.5...v2.0.6) (2021-04-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-shared to v7.25.0 ([#372](https://github.com/adobe/helix-service/issues/372)) ([bd56d2c](https://github.com/adobe/helix-service/commit/bd56d2ce13253dc5900f07d5df72bd1522f675f7))
+
 ## [2.0.5](https://github.com/adobe/helix-service/compare/v2.0.4...v2.0.5) (2021-04-13)
 
 
