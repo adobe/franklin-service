@@ -29,10 +29,10 @@
   },
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
-    "@adobe/create-helix-library": "1.4.7",
-    "@adobe/helix-shared": "7.25.1",
+    "@adobe/create-helix-library": "1.4.8",
+    "@adobe/helix-shared": "7.26.1",
     "@adobe/helix-status": "9.1.6",
-    "@adobe/helix-universal": "1.0.0",
+    "@adobe/helix-universal": "1.1.0",
     "@adobe/helix-universal-logger": "1.0.2",
     "dotenv": "8.2.0",
     "yaml": "1.10.2"
