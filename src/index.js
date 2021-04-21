@@ -21,7 +21,7 @@ const { Response } = require('@adobe/helix-universal');
  * @returns {Response} a response
  */
 function main(request, context) {
-  const name = request.url.searchParams.get('name') || 'world';
+  const name = new URL(request.url).searchParams.get('name') || 'world';
   context.log.info(`Saying hello to: ${name}.`);
   return new Response(`Hello, ${name}.`);
 }
