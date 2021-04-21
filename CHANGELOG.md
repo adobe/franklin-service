@@ -1,3 +1,10 @@
+## [2.0.11](https://github.com/adobe/helix-service/compare/v2.0.10...v2.0.11) (2021-04-21)
+
+
+### Bug Fixes
+
+* request.url is a string, not a URL ([#380](https://github.com/adobe/helix-service/issues/380)) ([1a1f51e](https://github.com/adobe/helix-service/commit/1a1f51ebd16e38a0536e185bcc3ddb02783f54e7))
+
 ## [2.0.10](https://github.com/adobe/helix-service/compare/v2.0.9...v2.0.10) (2021-04-20)
 
 
