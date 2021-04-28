@@ -30,7 +30,7 @@
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
     "@adobe/create-helix-library": "1.4.8",
-    "@adobe/helix-shared": "7.28.0",
+    "@adobe/helix-shared": "7.29.1",
     "@adobe/helix-status": "9.1.6",
     "@adobe/helix-universal": "1.2.1",
     "@adobe/helix-universal-logger": "1.0.2",
