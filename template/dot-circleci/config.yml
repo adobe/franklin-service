@@ -8,7 +8,7 @@ executors:
     working_directory: ~/repo
 
 orbs:
-  helix-post-deploy: adobe/helix-post-deploy@1.10.0
+  helix-post-deploy: adobe/helix-post-deploy@2.0.10
   helix-gcloud-setup: adobe/helix-gcloud-setup@1.0.0
 
 commands:
