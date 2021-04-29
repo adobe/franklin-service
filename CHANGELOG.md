@@ -1,3 +1,10 @@
+## [2.0.17](https://github.com/adobe/helix-service/compare/v2.0.16...v2.0.17) (2021-04-29)
+
+
+### Bug Fixes
+
+* use latest library ([e01010d](https://github.com/adobe/helix-service/commit/e01010d5c1418efe6e2a69af618f24ac7b2c5f1a))
+
 ## [2.0.16](https://github.com/adobe/helix-service/compare/v2.0.15...v2.0.16) (2021-04-29)
 
 
