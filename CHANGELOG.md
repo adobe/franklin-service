@@ -1,3 +1,10 @@
+## [2.0.15](https://github.com/adobe/helix-service/compare/v2.0.14...v2.0.15) (2021-04-29)
+
+
+### Bug Fixes
+
+* **deps:** should use new helix-post-deploy ([#387](https://github.com/adobe/helix-service/issues/387)) ([13f14ac](https://github.com/adobe/helix-service/commit/13f14ac308ed4d3028f101e3a60ee807a9687c3e))
+
 ## [2.0.14](https://github.com/adobe/helix-service/compare/v2.0.13...v2.0.14) (2021-04-28)
 
 
