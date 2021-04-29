@@ -1,3 +1,10 @@
+## [2.0.16](https://github.com/adobe/helix-service/compare/v2.0.15...v2.0.16) (2021-04-29)
+
+
+### Bug Fixes
+
+* trigger release ([e5daafa](https://github.com/adobe/helix-service/commit/e5daafa3de6ed51d31bab1eb5dd48f8d361aabb6))
+
 ## [2.0.15](https://github.com/adobe/helix-service/compare/v2.0.14...v2.0.15) (2021-04-29)
 
 
