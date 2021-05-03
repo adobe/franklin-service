@@ -9,7 +9,7 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-const { wrap } = require('@adobe/helix-shared');
+const wrap = require('@adobe/helix-shared-wrap');
 const { logger } = require('@adobe/helix-universal-logger');
 const { wrap: status } = require('@adobe/helix-status');
 const { Response } = require('@adobe/helix-universal');
