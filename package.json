@@ -34,7 +34,7 @@
     "@adobe/helix-status": "9.1.6",
     "@adobe/helix-universal": "1.5.0",
     "@adobe/helix-universal-logger": "1.0.3",
-    "dotenv": "8.6.0",
+    "dotenv": "9.0.1",
     "yaml": "1.10.2"
   },
   "devDependencies": {
@@ -51,7 +51,7 @@
     "eslint-plugin-header": "3.1.1",
     "eslint-plugin-import": "2.22.1",
     "jsdoc-to-markdown": "7.0.1",
-    "lint-staged": "10.5.4",
+    "lint-staged": "11.0.0",
     "mocha": "8.4.0",
     "nyc": "15.1.0",
     "proxyquire": "2.1.3",
