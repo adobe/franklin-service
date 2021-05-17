@@ -38,7 +38,7 @@
     "@adobe/helix-universal-logger": "1.0.3"
   },
   "devDependencies": {
-    "@adobe/eslint-config-helix": "1.1.4",
+    "@adobe/eslint-config-helix": "1.1.5",
     "@adobe/helix-deploy": "4.5.1",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/exec": "5.0.0",
