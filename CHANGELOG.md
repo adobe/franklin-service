@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/adobe/helix-service/compare/v2.0.23...v2.1.0) (2021-05-20)
+
+
+### Features
+
+* **package:** add cleanup options ([b0a1e65](https://github.com/adobe/helix-service/commit/b0a1e652f65cf359ffd60d9c9d5bde82361a4e42))
+
 ## [2.0.23](https://github.com/adobe/helix-service/compare/v2.0.22...v2.0.23) (2021-05-11)
 
 
