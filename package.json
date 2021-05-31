@@ -34,7 +34,7 @@
     "@adobe/helix-status": "9.1.7",
     "@adobe/helix-universal": "1.6.1",
     "@adobe/helix-universal-logger": "1.0.4",
-    "dotenv": "9.0.2",
+    "dotenv": "10.0.0",
     "yaml": "1.10.2"
   },
   "devDependencies": {
