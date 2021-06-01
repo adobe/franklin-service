@@ -8,7 +8,7 @@ executors:
     working_directory: ~/repo
 
 orbs:
-  helix-post-deploy: adobe/helix-post-deploy@2.0.10
+  helix-post-deploy: adobe/helix-post-deploy@3.0.0
   helix-gcloud-setup: adobe/helix-gcloud-setup@1.0.0
 
 commands:
@@ -73,9 +73,11 @@ jobs:
       # see https://circleci.com/orbs/registry/orb/adobe/helix-post-deploy
       # for more available parameters
       - helix-post-deploy/monitoring:
+           targets: universal, aws, google, adeobeio
            statuspage_name: Helix Service
            statuspage_group: Development
            newrelic_group_policy: Development Repeated Failure
+           newrelic_group_targets: universal
            incubator: true # remove only when promoting service to production
 
   branch-deploy:
