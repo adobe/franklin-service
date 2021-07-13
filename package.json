@@ -32,7 +32,7 @@
     "@adobe/create-helix-library": "1.4.11",
     "@adobe/helix-shared-wrap": "1.0.0",
     "@adobe/helix-status": "9.1.8",
-    "@adobe/helix-universal": "1.6.4",
+    "@adobe/helix-universal": "1.6.5",
     "@adobe/helix-universal-logger": "1.0.5",
     "dotenv": "10.0.0",
     "yaml": "1.10.2"
