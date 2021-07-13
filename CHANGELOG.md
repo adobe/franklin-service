@@ -1,3 +1,10 @@
+## [2.1.6](https://github.com/adobe/helix-service/compare/v2.1.5...v2.1.6) (2021-07-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-universal to v1.6.5 ([#425](https://github.com/adobe/helix-service/issues/425)) ([a213f62](https://github.com/adobe/helix-service/commit/a213f62ece722605b6f46c252e0c14b592933a18))
+
 ## [2.1.5](https://github.com/adobe/helix-service/compare/v2.1.4...v2.1.5) (2021-07-07)
 
 
