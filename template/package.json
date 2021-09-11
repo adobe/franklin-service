@@ -34,7 +34,7 @@
   "dependencies": {
     "@adobe/helix-shared-wrap": "1.0.0",
     "@adobe/helix-status": "9.2.2",
-    "@adobe/helix-universal": "1.6.9",
+    "@adobe/helix-universal": "1.6.10",
     "@adobe/helix-universal-logger": "1.0.8"
   },
   "devDependencies": {
