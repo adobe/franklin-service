@@ -33,7 +33,7 @@
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
     "@adobe/helix-shared-wrap": "1.0.0",
-    "@adobe/helix-status": "9.2.2",
+    "@adobe/helix-status": "9.2.3",
     "@adobe/helix-universal": "1.6.12",
     "@adobe/helix-universal-logger": "1.0.9"
   },
