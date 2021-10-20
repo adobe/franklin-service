@@ -1,3 +1,10 @@
+## [2.1.20](https://github.com/adobe/helix-service/compare/v2.1.19...v2.1.20) (2021-10-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-universal-logger to v2 ([#471](https://github.com/adobe/helix-service/issues/471)) ([21572d2](https://github.com/adobe/helix-service/commit/21572d20bdaac0c6da445044ac74dfde29c93f3a))
+
 ## [2.1.19](https://github.com/adobe/helix-service/compare/v2.1.18...v2.1.19) (2021-10-19)
 
 
