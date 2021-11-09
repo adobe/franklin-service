@@ -1,3 +1,10 @@
+## [2.1.21](https://github.com/adobe/helix-service/compare/v2.1.20...v2.1.21) (2021-11-09)
+
+
+### Bug Fixes
+
+* missing dot-nycrc.json ([1244d82](https://github.com/adobe/helix-service/commit/1244d8248a2dd54e8b1011ac3a5efcc1e4dd69d2))
+
 ## [2.1.20](https://github.com/adobe/helix-service/compare/v2.1.19...v2.1.20) (2021-10-20)
 
 
