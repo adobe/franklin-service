@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Adobe. All rights reserved.
+ * Copyright 2021 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License. You may obtain a copy
  * of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -10,14 +10,22 @@
  * governing permissions and limitations under the License.
  */
 
-/* eslint-env mocha */
-import assert from 'assert';
-import { Request } from '@adobe/helix-fetch';
-import { main } from '../src/index.js';
-
-describe('Index Tests', () => {
-  it('index function is present', async () => {
-    const result = await main(new Request('https://localhost/'), {});
-    assert.strictEqual(await result.text(), 'Hello, world.');
-  });
-});
+module.exports = {
+  root: true,
+  extends: '@adobe/helix',
+  env: {
+    node: true,
+    es6: true,
+  },
+  parserOptions: {
+    sourceType: 'module',
+    ecmaVersion: 2020,
+  },
+  rules: {
+    'import/extensions': [2, 'ignorePackages'],
+    'import/prefer-default-export': 0,
+  },
+  globals: {
+    __rootdir: true,
+  },
+};

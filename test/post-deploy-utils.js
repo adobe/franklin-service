@@ -11,10 +11,12 @@
  */
 
 /* eslint-disable max-classes-per-file, class-methods-use-this */
-const packjson = require('../package.json');
-require('dotenv').config();
+import { config } from 'dotenv';
+import packjson from './package.cjs';
 
-class OpenwhiskTarget {
+config();
+
+export class OpenwhiskTarget {
   constructor(opts = {}) {
     Object.assign(this, {
       namespace: 'helix',
@@ -47,7 +49,7 @@ class OpenwhiskTarget {
   }
 }
 
-class AWSTarget extends OpenwhiskTarget {
+export class AWSTarget extends OpenwhiskTarget {
   // eslint-disable-next-line class-methods-use-this
   title() {
     return 'AWS';
@@ -68,7 +70,7 @@ class AWSTarget extends OpenwhiskTarget {
   }
 }
 
-class GoogleTarget extends OpenwhiskTarget {
+export class GoogleTarget extends OpenwhiskTarget {
   title() {
     return 'Google';
   }
@@ -87,17 +89,11 @@ class GoogleTarget extends OpenwhiskTarget {
 }
 
 const ALL_TARGETS = [
-  OpenwhiskTarget,
+  // OpenwhiskTarget,
   AWSTarget,
-  GoogleTarget,
+  // GoogleTarget,
 ];
 
-function createTargets(opts) {
+export function createTargets(opts) {
   return ALL_TARGETS.map((TargetClass) => new TargetClass(opts));
 }
-
-module.exports = {
-  OpenwhiskTarget,
-  AWSTarget,
-  createTargets,
-};
