@@ -9,10 +9,10 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-const wrap = require('@adobe/helix-shared-wrap');
-const { logger } = require('@adobe/helix-universal-logger');
-const { wrap: status } = require('@adobe/helix-status');
-const { Response } = require('@adobe/helix-universal');
+import wrap from '@adobe/helix-shared-wrap';
+import { logger } from '@adobe/helix-universal-logger';
+import { wrap as status } from '@adobe/helix-status';
+import { Response } from '@adobe/helix-universal';
 
 /**
  * This is the main function
@@ -20,13 +20,13 @@ const { Response } = require('@adobe/helix-universal');
  * @param {UniversalContext} context the context of the universal serverless function
  * @returns {Response} a response
  */
-function main(request, context) {
+function run(request, context) {
   const name = new URL(request.url).searchParams.get('name') || 'world';
   context.log.info(`Saying hello to: ${name}.`);
   return new Response(`Hello, ${name}.`);
 }
 
-module.exports.main = wrap(main)
+export const main = wrap(run)
   .with(status)
   .with(logger.trace)
   .with(logger);

@@ -10,8 +10,10 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-const init = require('@adobe/create-helix-library');
-const yaml = require('yaml');
+import init from '@adobe/create-helix-library';
+import yaml from 'yaml';
+import { resolve } from 'path';
+import { fileURLToPath } from 'url';
 
 function setValue(node, val) {
   // eslint-disable-next-line no-param-reassign
@@ -20,7 +22,7 @@ function setValue(node, val) {
 
 // eslint-disable-next-line no-console
 console.log('Creating a new Helix Service');
-init(__dirname, {
+init(resolve(fileURLToPath(import.meta.url), '..'), {
   'dot-circleci/config.yml': (buf, answers) => {
     const doc = yaml.parseDocument(buf.toString());
     const [name, group, policy] = doc.contents.items

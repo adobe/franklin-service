@@ -11,11 +11,9 @@
  */
 
 /* eslint-env mocha */
-/* eslint-disable no-unused-expressions */
-
-const chai = require('chai');
-const chaiHttp = require('chai-http');
-const { createTargets } = require('./post-deploy-utils.js');
+import chai from 'chai';
+import chaiHttp from 'chai-http';
+import { createTargets } from './post-deploy-utils.js';
 
 chai.use(chaiHttp);
 const { expect } = chai;
