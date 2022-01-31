@@ -38,7 +38,7 @@
     "@adobe/helix-shared-wrap": "1.0.0",
     "@adobe/helix-status": "9.2.4",
     "@adobe/helix-universal-logger": "2.0.0",
-    "dotenv": "14.3.2",
+    "dotenv": "15.0.0",
     "yaml": "1.10.2"
   },
   "devDependencies": {
