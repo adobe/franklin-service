@@ -37,7 +37,7 @@
     "@adobe/helix-fetch": "3.0.3",
     "@adobe/helix-shared-wrap": "1.0.1",
     "@adobe/helix-status": "9.2.5",
-    "@adobe/helix-universal-logger": "2.0.1",
+    "@adobe/helix-universal-logger": "2.0.2",
     "dotenv": "15.0.0",
     "yaml": "1.10.2"
   },
