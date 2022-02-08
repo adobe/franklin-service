@@ -1,3 +1,10 @@
+## [2.1.28](https://github.com/adobe/helix-service/compare/v2.1.27...v2.1.28) (2022-02-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/create-helix-library to v2.0.2 ([#529](https://github.com/adobe/helix-service/issues/529)) ([70be049](https://github.com/adobe/helix-service/commit/70be0497b02f6fca69ae6e3c76446c84adf55064))
+
 ## [2.1.27](https://github.com/adobe/helix-service/compare/v2.1.26...v2.1.27) (2022-02-04)
 
 
