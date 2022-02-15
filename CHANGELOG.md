@@ -1,3 +1,10 @@
+## [2.1.32](https://github.com/adobe/helix-service/compare/v2.1.31...v2.1.32) (2022-02-15)
+
+
+### Bug Fixes
+
+* **package:** exclude semantic-release script ([7ca876f](https://github.com/adobe/helix-service/commit/7ca876f177c66e4bf9a8fb8aff0affb1e0d25991))
+
 ## [2.1.31](https://github.com/adobe/helix-service/compare/v2.1.30...v2.1.31) (2022-02-15)
 
 
