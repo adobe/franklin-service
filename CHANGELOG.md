@@ -1,3 +1,10 @@
+## [2.1.31](https://github.com/adobe/helix-service/compare/v2.1.30...v2.1.31) (2022-02-15)
+
+
+### Bug Fixes
+
+* **package:** include github template, too ([d5fe128](https://github.com/adobe/helix-service/commit/d5fe12876557c1988369f08a028658b8b574d602))
+
 ## [2.1.30](https://github.com/adobe/helix-service/compare/v2.1.29...v2.1.30) (2022-02-15)
 
 
