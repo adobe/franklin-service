@@ -1,3 +1,11 @@
+## [2.1.33](https://github.com/adobe/helix-service/compare/v2.1.32...v2.1.33) (2022-02-15)
+
+
+### Bug Fixes
+
+* deploy me ([334f05e](https://github.com/adobe/helix-service/commit/334f05e1349e3e41a4199e73a25abb0293553a36))
+* **package:** update helix-library to non-buggy version ([1dfa143](https://github.com/adobe/helix-service/commit/1dfa143e5a999819ae1a06833982a6155e35447e))
+
 ## [2.1.32](https://github.com/adobe/helix-service/compare/v2.1.31...v2.1.32) (2022-02-15)
 
 
