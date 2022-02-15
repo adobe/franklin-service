@@ -10,3 +10,4 @@ test-results.xml
 !.*.yaml
 !.*.json
 !.github
+.github/workflows/semantic-release.yaml
