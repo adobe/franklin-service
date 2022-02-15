@@ -1,3 +1,10 @@
+## [2.1.30](https://github.com/adobe/helix-service/compare/v2.1.29...v2.1.30) (2022-02-15)
+
+
+### Bug Fixes
+
+* **package:** include some default excludes ([a795a98](https://github.com/adobe/helix-service/commit/a795a985db85c7ba0011efe2fefe28ff23170f34))
+
 ## [2.1.29](https://github.com/adobe/helix-service/compare/v2.1.28...v2.1.29) (2022-02-09)
 
 
