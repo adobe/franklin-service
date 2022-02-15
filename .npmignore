@@ -6,3 +6,6 @@ logs
 test-results.xml
 /.*
 !.circleci
+!.*.cjs
+!.*.yaml
+!.*.json
