@@ -1,6 +1,6 @@
 {
   "name": "@adobe/create-helix-service",
-  "version": "2.1.29",
+  "version": "2.1.33",
   "private": false,
   "description": "Create Helix Service",
   "main": "src/index.js",
@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
-    "@adobe/create-helix-library": "2.0.2",
+    "@adobe/create-helix-library": "2.0.3",
     "@adobe/helix-fetch": "3.0.4",
     "@adobe/helix-shared-wrap": "1.0.2",
     "@adobe/helix-status": "9.2.6",

@@ -6,3 +6,8 @@ logs
 test-results.xml
 /.*
 !.circleci
+!.*.cjs
+!.*.yaml
+!.*.json
+!.github
+.github/workflows/semantic-release.yaml

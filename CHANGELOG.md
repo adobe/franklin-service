@@ -1,3 +1,32 @@
+## [2.1.33](https://github.com/adobe/helix-service/compare/v2.1.32...v2.1.33) (2022-02-15)
+
+
+### Bug Fixes
+
+* deploy me ([334f05e](https://github.com/adobe/helix-service/commit/334f05e1349e3e41a4199e73a25abb0293553a36))
+* **package:** update helix-library to non-buggy version ([1dfa143](https://github.com/adobe/helix-service/commit/1dfa143e5a999819ae1a06833982a6155e35447e))
+
+## [2.1.32](https://github.com/adobe/helix-service/compare/v2.1.31...v2.1.32) (2022-02-15)
+
+
+### Bug Fixes
+
+* **package:** exclude semantic-release script ([7ca876f](https://github.com/adobe/helix-service/commit/7ca876f177c66e4bf9a8fb8aff0affb1e0d25991))
+
+## [2.1.31](https://github.com/adobe/helix-service/compare/v2.1.30...v2.1.31) (2022-02-15)
+
+
+### Bug Fixes
+
+* **package:** include github template, too ([d5fe128](https://github.com/adobe/helix-service/commit/d5fe12876557c1988369f08a028658b8b574d602))
+
+## [2.1.30](https://github.com/adobe/helix-service/compare/v2.1.29...v2.1.30) (2022-02-15)
+
+
+### Bug Fixes
+
+* **package:** include some default excludes ([a795a98](https://github.com/adobe/helix-service/commit/a795a985db85c7ba0011efe2fefe28ff23170f34))
+
 ## [2.1.29](https://github.com/adobe/helix-service/compare/v2.1.28...v2.1.29) (2022-02-09)
 
 
