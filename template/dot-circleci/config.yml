@@ -2,9 +2,9 @@ version: 2.1
 executors:
   node14:
     docker:
-      - image: circleci/node:14
-        environment:
-          NPM_CONFIG_PREFIX: "~/.npm-global"
+      - image: cimg/node:14.19
+    environment:
+      NPM_CONFIG_PREFIX: "~/.npm-global"
     working_directory: ~/repo
 
 orbs:
