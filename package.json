@@ -34,10 +34,10 @@
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
     "@adobe/create-helix-library": "2.0.4",
-    "@adobe/helix-fetch": "3.0.7",
+    "@adobe/helix-fetch": "3.0.8",
     "@adobe/helix-shared-wrap": "1.0.4",
-    "@adobe/helix-status": "9.2.9",
-    "@adobe/helix-universal-logger": "2.0.5",
+    "@adobe/helix-status": "9.2.10",
+    "@adobe/helix-universal-logger": "2.0.6",
     "dotenv": "16.0.0",
     "yaml": "1.10.2"
   },
