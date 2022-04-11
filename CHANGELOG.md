@@ -1,3 +1,10 @@
+## [2.1.42](https://github.com/adobe/helix-service/compare/v2.1.41...v2.1.42) (2022-04-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency yaml to v2 ([#568](https://github.com/adobe/helix-service/issues/568)) ([f4df927](https://github.com/adobe/helix-service/commit/f4df927f178f57f161b098f13844d30865a53944))
+
 ## [2.1.41](https://github.com/adobe/helix-service/compare/v2.1.40...v2.1.41) (2022-03-21)
 
 
