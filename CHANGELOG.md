@@ -1,3 +1,10 @@
+## [2.1.43](https://github.com/adobe/helix-service/compare/v2.1.42...v2.1.43) (2022-04-12)
+
+
+### Bug Fixes
+
+* property order and defaults in monitoring ([13225c4](https://github.com/adobe/helix-service/commit/13225c44f03370783c64f87fc4a51f067af5d9e8))
+
 ## [2.1.42](https://github.com/adobe/helix-service/compare/v2.1.41...v2.1.42) (2022-04-11)
 
 
