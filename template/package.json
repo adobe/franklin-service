@@ -14,7 +14,7 @@
     "commit": "git-cz",
     "build": "hedy -v",
     "deploy": "hedy -v --deploy --test",
-    "deploy-sequences": "hedy --no-build -no-hints -l major -l minor --cleanup-patch 1w --cleanup-minor 1m --cleanup-major 1y",
+    "deploy-routes": "hedy --no-build --no-hints -l major",
     "deploy-ci": "hedy -v --deploy --test --pkgVersion=ci$CIRCLE_BUILD_NUM -l ci --cleanup-ci 24h",
     "prepare": "husky install"
   },

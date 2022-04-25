@@ -61,6 +61,7 @@ init(resolve(fileURLToPath(import.meta.url), '..'), {
       .replace(/adobe\/helix-service/g, answers.fullname);
     return Buffer.from(updated);
   },
+  'dot-releaserc.cjs': (buf) => buf,
 }, [
   {
     type: 'list',
