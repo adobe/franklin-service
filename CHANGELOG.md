@@ -1,3 +1,10 @@
+## [2.1.45](https://github.com/adobe/helix-service/compare/v2.1.44...v2.1.45) (2022-04-25)
+
+
+### Bug Fixes
+
+* better releasing ([#578](https://github.com/adobe/helix-service/issues/578)) ([ee7d212](https://github.com/adobe/helix-service/commit/ee7d212884402f435298bdce00b643c4c060b810))
+
 ## [2.1.44](https://github.com/adobe/helix-service/compare/v2.1.43...v2.1.44) (2022-04-17)
 
 
