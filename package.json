@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/adobe/helix-service#readme",
   "dependencies": {
-    "@adobe/create-helix-library": "2.0.5",
+    "@adobe/create-helix-library": "2.0.6",
     "@adobe/helix-fetch": "3.0.9",
     "@adobe/helix-shared-wrap": "1.0.4",
     "@adobe/helix-status": "9.2.11",
