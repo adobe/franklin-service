@@ -1,3 +1,10 @@
+## [2.1.47](https://github.com/adobe/helix-service/compare/v2.1.46...v2.1.47) (2022-05-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-shared-wrap to v1.0.5 ([#584](https://github.com/adobe/helix-service/issues/584)) ([beb9573](https://github.com/adobe/helix-service/commit/beb9573276a70b58405bc4db7d7ccfbf7855e961))
+
 ## [2.1.46](https://github.com/adobe/helix-service/compare/v2.1.45...v2.1.46) (2022-04-30)
 
 
