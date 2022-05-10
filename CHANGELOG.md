@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/adobe/helix-service/compare/v2.1.47...v2.2.0) (2022-05-10)
+
+
+### Features
+
+* **release:** include semantic-release-coralogix plugin in release procedure ([b7466e7](https://github.com/adobe/helix-service/commit/b7466e78fc8ad304d120069744d8f4cea3a3b133))
+
 ## [2.1.47](https://github.com/adobe/helix-service/compare/v2.1.46...v2.1.47) (2022-05-03)
 
 
