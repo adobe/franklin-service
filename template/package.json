@@ -19,9 +19,12 @@
     "prepare": "husky install"
   },
   "wsk": {
+    "nodeVersion": 16,
+    "target": "aws",
     "name": "helix-services/service@${version}",
     "testUrl": "/_status_check/healthcheck.json",
-    "memory": 256
+    "memory": 256,
+    "fastlyServiceId!important": ""
   },
   "mocha": {
     "spec": "test/**/*.test.js",
@@ -55,11 +58,7 @@
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "c8": "7.11.2",
-    "chai": "4.3.6",
-    "chai-http": "4.3.0",
     "codecov": "3.8.3",
-    "commitizen": "4.2.4",
-    "cz-conventional-changelog": "3.3.0",
     "dotenv": "16.0.1",
     "eslint": "8.15.0",
     "eslint-plugin-header": "3.1.1",
@@ -73,10 +72,5 @@
   },
   "lint-staged": {
     "*.js": "eslint"
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
-    }
   }
 }

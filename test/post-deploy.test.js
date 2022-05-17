@@ -11,25 +11,35 @@
  */
 
 /* eslint-env mocha */
-import chai from 'chai';
-import chaiHttp from 'chai-http';
+import assert from 'assert';
+import { noCache } from '@adobe/helix-fetch';
 import { createTargets } from './post-deploy-utils.js';
-
-chai.use(chaiHttp);
-const { expect } = chai;
 
 createTargets().forEach((target) => {
   describe(`Post-Deploy Tests (${target.title()})`, () => {
-    it('Purge a blog post', async () => {
-      await chai
-        .request(target.host())
-        .get(target.urlPath())
-        .then((response) => {
-          expect(response).to.have.status(200);
-          expect.fail('Not ready yet');
-        }).catch((e) => {
-          throw e;
-        });
+    const fetchContext = noCache();
+    const { fetch } = fetchContext;
+
+    afterEach(() => {
+      fetchContext.reset();
+    });
+
+    it('returns the status of the function', async () => {
+      const res = await fetch(`${target.host()}${target.urlPath()}/_status_check/healthcheck.json`);
+      assert.strictEqual(res.status, 200);
+      const json = await res.json();
+      delete json.process;
+      delete json.response_time;
+      assert.deepStrictEqual(json, {
+        status: 'OK',
+        version: target.version,
+      });
+    }).timeout(50000);
+
+    it('invokes the function', async () => {
+      const res = await fetch(`${target.host()}${target.urlPath()}`);
+      assert.strictEqual(res.status, 200);
+      assert.fail('not ready yet');
     }).timeout(50000);
   });
 });
