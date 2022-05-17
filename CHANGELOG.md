@@ -1,3 +1,10 @@
+## [2.2.2](https://github.com/adobe/helix-service/compare/v2.2.1...v2.2.2) (2022-05-17)
+
+
+### Bug Fixes
+
+* guard yaml map ([e768af1](https://github.com/adobe/helix-service/commit/e768af10dd050cd028d05f2f5f2a054a11793aa4))
+
 ## [2.2.1](https://github.com/adobe/helix-service/compare/v2.2.0...v2.2.1) (2022-05-16)
 
 
