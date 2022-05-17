@@ -1,13 +1,13 @@
 version: 2.1
 executors:
-  node14:
+  node16:
     docker:
-      - image: cimg/node:14.19
+      - image: cimg/node:16.15
     working_directory: ~/repo
 
 orbs:
   helix-post-deploy: adobe/helix-post-deploy@3.0.0
-  helix-gcloud-setup: adobe/helix-gcloud-setup@1.0.0
+  codecov: codecov/codecov@3.2.2
 
 commands:
   setup:
@@ -32,7 +32,7 @@ commands:
 
 jobs:
   build:
-    executor: node14
+    executor: node16
     steps:
       - setup
       - run: mkdir junit
@@ -41,14 +41,15 @@ jobs:
           command: npm run lint
       - run:
           name: Getting Code Coverage
-          command: npm run test-ci
+          command: npm run test
+      - codecov/upload
       - store_test_results:
           path: junit
       - store_artifacts:
           path: junit
 
   semantic-release:
-    executor: node14
+    executor: node16
     steps:
       - setup
       - run:
@@ -64,14 +65,14 @@ jobs:
       # see https://circleci.com/orbs/registry/orb/adobe/helix-post-deploy
       # for more available parameters
       - helix-post-deploy/monitoring:
-           statuspage_name: Helix Service
-           statuspage_group: Development
-           newrelic_group_policy: Development Repeated Failure
-           targets: aws
-           incubator: true # remove only when promoting service to production
+          statuspage_name: Helix Service
+          statuspage_group: Development
+          newrelic_group_policy: Development Repeated Failure
+          targets: aws
+          incubator: true # remove only when promoting service to production
 
   branch-deploy:
-    executor: node14
+    executor: node16
     steps:
       - setup
       - run:
