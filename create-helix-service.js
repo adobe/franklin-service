@@ -25,11 +25,13 @@ console.log('Creating a new Helix Service');
 init(resolve(fileURLToPath(import.meta.url), '..'), {
   'dot-circleci/config.yml': (buf, answers) => {
     const doc = yaml.parseDocument(buf.toString());
-    const [name, group, policy] = doc.contents.items
+    const monitoring = doc.contents.items
       .filter((item) => item.key.value === 'jobs')[0].value.items
       .filter((item) => item.key.value === 'semantic-release')[0].value.items
       .filter((item) => item.key.value === 'steps')[0].value.items
-      .filter((item) => item.type === 'MAP' && item.items && item.items[0] && item.items[0].key.value === 'helix-post-deploy/monitoring')[0].items[0].value.items;
+      .filter((item) => item?.items?.[0]?.key?.value === 'helix-post-deploy/monitoring')[0].items[0].value.items;
+
+    const [name, group, policy] = monitoring;
 
     setValue(name, answers.title);
     setValue(group, answers.alertgroup);
