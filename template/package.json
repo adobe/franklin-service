@@ -7,7 +7,6 @@
   "type": "module",
   "scripts": {
     "test": " c8 mocha  -i -g 'Post-Deploy'",
-    "test-ci": "c8 mocha  -i -g 'Post-Deploy' && codecov",
     "test-postdeploy": "mocha -g 'Post-Deploy'",
     "lint": "eslint .",
     "semantic-release": "semantic-release",

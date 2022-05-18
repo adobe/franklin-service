@@ -19,7 +19,7 @@ module.exports = {
   },
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2020,
+    ecmaVersion: 13,
   },
   rules: {
     'import/extensions': [2, 'ignorePackages'],
