@@ -1,3 +1,10 @@
+## [2.2.3](https://github.com/adobe/helix-service/compare/v2.2.2...v2.2.3) (2022-05-18)
+
+
+### Bug Fixes
+
+* use ci codecov uploader and node16 ([#595](https://github.com/adobe/helix-service/issues/595)) ([0387799](https://github.com/adobe/helix-service/commit/038779918bab3b9d366b1a6829cc3cc19e1d885f))
+
 ## [2.2.2](https://github.com/adobe/helix-service/compare/v2.2.1...v2.2.2) (2022-05-17)
 
 
