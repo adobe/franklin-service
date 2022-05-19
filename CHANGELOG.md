@@ -1,3 +1,10 @@
+## [2.2.4](https://github.com/adobe/helix-service/compare/v2.2.3...v2.2.4) (2022-05-19)
+
+
+### Bug Fixes
+
+* remove chai and default to aws ([#596](https://github.com/adobe/helix-service/issues/596)) ([c375046](https://github.com/adobe/helix-service/commit/c3750469ae90badbf1c3d148de7595ade47c7a82))
+
 ## [2.2.3](https://github.com/adobe/helix-service/compare/v2.2.2...v2.2.3) (2022-05-18)
 
 
