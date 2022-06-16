@@ -1,3 +1,10 @@
+## [2.2.6](https://github.com/adobe/helix-service/compare/v2.2.5...v2.2.6) (2022-06-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-fetch to v3.0.11 ([7cfce80](https://github.com/adobe/helix-service/commit/7cfce80c60fc0e2c244c79c7a361d5eebb20ef30))
+
 ## [2.2.5](https://github.com/adobe/helix-service/compare/v2.2.4...v2.2.5) (2022-05-19)
 
 
