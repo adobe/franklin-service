@@ -30,9 +30,13 @@ createTargets().forEach((target) => {
       const json = await res.json();
       delete json.process;
       delete json.response_time;
+      // status returns 0.0.0+ci123 for ci versions
+      const version = target.version.startsWith('ci')
+        ? `0.0.0+${target.version}`
+        : target.version;
       assert.deepStrictEqual(json, {
         status: 'OK',
-        version: target.version,
+        version,
       });
     }).timeout(50000);
 
