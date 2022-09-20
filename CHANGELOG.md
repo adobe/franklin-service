@@ -1,3 +1,10 @@
+## [2.2.11](https://github.com/adobe/helix-service/compare/v2.2.10...v2.2.11) (2022-09-20)
+
+
+### Bug Fixes
+
+* post deploy ([#641](https://github.com/adobe/helix-service/issues/641)) ([6e72d99](https://github.com/adobe/helix-service/commit/6e72d99c6605d8a65f8eea47bb8e51c089dbea35))
+
 ## [2.2.10](https://github.com/adobe/helix-service/compare/v2.2.9...v2.2.10) (2022-09-05)
 
 
