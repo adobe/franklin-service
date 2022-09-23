@@ -1,3 +1,10 @@
+## [2.2.12](https://github.com/adobe/helix-service/compare/v2.2.11...v2.2.12) (2022-09-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-status to v9.2.14 ([#642](https://github.com/adobe/helix-service/issues/642)) ([de787a0](https://github.com/adobe/helix-service/commit/de787a032e7ba87992da4c969fd2129c23988842))
+
 ## [2.2.11](https://github.com/adobe/helix-service/compare/v2.2.10...v2.2.11) (2022-09-20)
 
 
