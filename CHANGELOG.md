@@ -1,3 +1,10 @@
+## [2.2.13](https://github.com/adobe/helix-service/compare/v2.2.12...v2.2.13) (2022-09-25)
+
+
+### Bug Fixes
+
+* @adobe/helix-fetch -> @adobe/fetch ([#644](https://github.com/adobe/helix-service/issues/644)) ([b545ad9](https://github.com/adobe/helix-service/commit/b545ad94cda7742097e2807a8604ba8f8184ceca))
+
 ## [2.2.12](https://github.com/adobe/helix-service/compare/v2.2.11...v2.2.12) (2022-09-23)
 
 
