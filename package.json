@@ -35,7 +35,7 @@
     "@adobe/create-helix-library": "2.0.10",
     "@adobe/fetch": "3.1.4",
     "@adobe/helix-shared-wrap": "1.0.5",
-    "@adobe/helix-status": "9.2.14",
+    "@adobe/helix-status": "9.2.15",
     "@adobe/helix-universal-logger": "2.0.13",
     "dotenv": "16.0.3",
     "yaml": "2.1.1"
