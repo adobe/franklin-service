@@ -1,3 +1,10 @@
+## [2.2.15](https://github.com/adobe/helix-service/compare/v2.2.14...v2.2.15) (2022-10-14)
+
+
+### Bug Fixes
+
+* **deps:** update adobe fixes ([3ce3aa4](https://github.com/adobe/helix-service/commit/3ce3aa482c807c59bc7a542e0cca6959fc76aefd))
+
 ## [2.2.14](https://github.com/adobe/helix-service/compare/v2.2.13...v2.2.14) (2022-10-04)
 
 
