@@ -10,7 +10,7 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-import init from '@adobe/create-helix-library';
+import init from '@adobe/create-franklin-library';
 import yaml from 'yaml';
 import { resolve } from 'path';
 import { fileURLToPath } from 'url';
@@ -21,7 +21,7 @@ function setValue(node, val) {
 }
 
 // eslint-disable-next-line no-console
-console.log('Creating a new Helix Service');
+console.log('Creating a new Franklin Service');
 init(resolve(fileURLToPath(import.meta.url), '..'), {
   'dot-circleci/config.yml': (buf, answers) => {
     const doc = yaml.parseDocument(buf.toString());
@@ -47,7 +47,7 @@ init(resolve(fileURLToPath(import.meta.url), '..'), {
     json.bugs.url = `https://github.com/${answers.fullname}/issues`;
     json.homepage = `https://github.com/${answers.fullname}#readme`;
 
-    json.wsk.name = `helix-services/${answers.name.replace(/helix-/, '')}@\${version}`;
+    json.wsk.name = `helix-services/${answers.name.replace(/franklin-/, '')}@\${version}`;
 
     delete json.files;
 
@@ -57,10 +57,10 @@ init(resolve(fileURLToPath(import.meta.url), '..'), {
     const shortname = answers.name.replace('helix-', '');
     const updated = buf.toString()
       .replace(/@adobe\/helix-service/g, answers.fullscope)
-      .replace(/Helix Service/g, answers.title)
-      .replace(/An example service to be used in and with Project Helix/g, answers.description)
-      .replace(/helix-services\/service/g, `helix-services/${shortname}`)
-      .replace(/adobe\/helix-service/g, answers.fullname);
+      .replace(/Franklin Service/g, answers.title)
+      .replace(/An example service to be used in and with Project Franklin/g, answers.description)
+      .replace(/franklin-services\/service/g, `franklin-services/${shortname}`)
+      .replace(/adobe\/franklin-service/g, answers.fullname);
     return Buffer.from(updated);
   },
   'dot-releaserc.cjs': (buf) => buf,

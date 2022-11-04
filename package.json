@@ -1,12 +1,12 @@
 {
-  "name": "@adobe/create-helix-service",
+  "name": "@adobe/create-franklin-service",
   "version": "2.2.17",
   "private": false,
-  "description": "Create Helix Service",
+  "description": "Create Franklin Service",
   "main": "src/index.js",
   "type": "module",
   "bin": {
-    "create-helix-service": "create-helix-service.js"
+    "create-franklin-service": "create-franklin-service.js"
   },
   "scripts": {
     "test": "c8 mocha -i -g 'Post-Deploy' ",
@@ -23,16 +23,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adobe/helix-service.git"
+    "url": "https://github.com/adobe/franklin-service.git"
   },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/adobe/helix-service/issues"
+    "url": "https://github.com/adobe/franklin-service/issues"
   },
-  "homepage": "https://github.com/adobe/helix-service#readme",
+  "homepage": "https://github.com/adobe/franklin-service#readme",
   "dependencies": {
-    "@adobe/create-helix-library": "2.0.10",
+    "@adobe/create-franklin-library": "2.0.10",
     "@adobe/fetch": "3.3.0",
     "@adobe/helix-shared-wrap": "1.0.5",
     "@adobe/helix-status": "9.2.18",

@@ -21,7 +21,7 @@ export class OpenwhiskTarget {
     Object.assign(this, {
       namespace: 'helix',
       package: 'helix-services',
-      name: packjson.name.replace('@adobe/helix-', ''),
+      name: packjson.name.replace('@adobe/franklin-', ''),
       version: String(packjson.version),
     }, opts);
     if (process.env.CI && process.env.CIRCLE_BUILD_NUM && process.env.CIRCLE_BRANCH !== 'main' && !opts.version) {

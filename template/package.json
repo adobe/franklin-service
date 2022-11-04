@@ -1,8 +1,8 @@
 {
-  "name": "@adobe/helix-service",
+  "name": "@adobe/franklin-service",
   "version": "1.4.9",
   "private": true,
-  "description": "Example Helix Service",
+  "description": "Example Franklin Service",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
@@ -20,7 +20,7 @@
   "wsk": {
     "nodeVersion": 16,
     "target": "aws",
-    "name": "helix-services/service@${version}",
+    "name": "franklin-services/service@${version}",
     "testUrl": "/_status_check/healthcheck.json",
     "memory": 256,
     "fastlyServiceId!important": ""
@@ -34,14 +34,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adobe/helix-service"
+    "url": "https://github.com/adobe/franklin-service"
   },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/adobe/helix-service/issues"
+    "url": "https://github.com/adobe/franklin-service/issues"
   },
-  "homepage": "https://github.com/adobe/helix-service#readme",
+  "homepage": "https://github.com/adobe/franklin-service#readme",
   "dependencies": {
     "@adobe/fetch": "3.3.0",
     "@adobe/helix-shared-wrap": "1.0.5",
