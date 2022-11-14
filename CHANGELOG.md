@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/adobe/franklin-service/compare/v2.2.17...v3.0.0) (2022-11-14)
+
+
+### Features
+
+* rename to Create Franklin Service ([5457109](https://github.com/adobe/franklin-service/commit/54571093e3c348584c1cce73f0bdaca8c18437b9)), closes [adobe/franklin-library#288](https://github.com/adobe/franklin-library/issues/288)
+
+
+### BREAKING CHANGES
+
+* the name of the tool changes to create-franklin-library
+
 ## [2.2.17](https://github.com/adobe/helix-service/compare/v2.2.16...v2.2.17) (2022-10-26)
 
 
