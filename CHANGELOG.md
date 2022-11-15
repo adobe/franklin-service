@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/adobe/franklin-service/compare/v3.0.2...v3.0.3) (2022-11-15)
+
+
+### Bug Fixes
+
+* **template:** remove deprecated codecov cli ([6eb76a2](https://github.com/adobe/franklin-service/commit/6eb76a2b2f44310d10ae16f10b92dab48ea95a26))
+
 ## [3.0.2](https://github.com/adobe/franklin-service/compare/v3.0.1...v3.0.2) (2022-11-15)
 
 
