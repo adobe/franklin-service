@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/adobe/franklin-service/compare/v3.0.0...v3.0.1) (2022-11-15)
+
+
+### Bug Fixes
+
+* **cli:** remane start script ([82382eb](https://github.com/adobe/franklin-service/commit/82382ebae8dd026812465e1e30cdbf699404d13a)), closes [#669](https://github.com/adobe/franklin-service/issues/669)
+
 # [3.0.0](https://github.com/adobe/franklin-service/compare/v2.2.17...v3.0.0) (2022-11-14)
 
 
