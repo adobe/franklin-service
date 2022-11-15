@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/adobe/franklin-service/compare/v3.0.1...v3.0.2) (2022-11-15)
+
+
+### Bug Fixes
+
+* **template:** start new projects on tier 3 ([c4d6afa](https://github.com/adobe/franklin-service/commit/c4d6afa1d5baba294106ceb33147fb1ea47aea8f))
+
 ## [3.0.1](https://github.com/adobe/franklin-service/compare/v3.0.0...v3.0.1) (2022-11-15)
 
 
