@@ -92,14 +92,14 @@ workflows:
     jobs:
       - build
       - branch-deploy:
-          context: Project Helix
+          context: Project Helix Tier3
           requires:
             - build
           filters:
             branches:
               ignore: main
       - semantic-release:
-          context: Project Helix
+          context: Project Helix Tier3
           requires:
             - build
           filters:
