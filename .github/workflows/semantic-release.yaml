@@ -12,13 +12,13 @@ jobs:
       - uses: actions/checkout@v3
         with:
           persist-credentials: false
-      - name: Use Node.js 14.x
+      - name: Use Node.js 18.x
         uses: actions/setup-node@v3
         with:
-          node-version: '14.x'
+          node-version: '18.x'
       - run: npm install
       - run: npm test
       - run: npm run semantic-release
         env:
-          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.ADOBE_BOT_NPM_TOKEN }}
