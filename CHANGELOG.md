@@ -1,3 +1,10 @@
+## [3.0.6](https://github.com/adobe/franklin-service/compare/v3.0.5...v3.0.6) (2023-01-12)
+
+
+### Bug Fixes
+
+* Use node 18 for circleci ([#687](https://github.com/adobe/franklin-service/issues/687)) ([7ae1148](https://github.com/adobe/franklin-service/commit/7ae11485bb6ca71d1373a4734d45d02f4f1f3e77))
+
 ## [3.0.5](https://github.com/adobe/franklin-service/compare/v3.0.4...v3.0.5) (2023-01-07)
 
 
