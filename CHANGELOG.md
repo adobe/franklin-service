@@ -1,3 +1,10 @@
+## [3.0.9](https://github.com/adobe/franklin-service/compare/v3.0.8...v3.0.9) (2023-01-30)
+
+
+### Bug Fixes
+
+* **release:** use our own ship ([ef733f5](https://github.com/adobe/franklin-service/commit/ef733f5dc02fb16e07e50c2b3f8fc58c7d2dba77))
+
 ## [3.0.8](https://github.com/adobe/franklin-service/compare/v3.0.7...v3.0.8) (2023-01-28)
 
 
