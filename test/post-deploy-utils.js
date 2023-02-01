@@ -43,6 +43,14 @@ export class OpenwhiskTarget {
     return `/api/v1/web/${this.namespace}/${this.package}/${this.name}@${this.version}`;
   }
 
+  url(path, query) {
+    const url = new URL(`${this.host()}${this.urlPath()}${path}`);
+    if (query) {
+      Object.entries(query).forEach(([name, value]) => url.searchParams.append(name, value));
+    }
+    return url;
+  }
+
   // eslint-disable-next-line class-methods-use-this
   enabled() {
     return true;
