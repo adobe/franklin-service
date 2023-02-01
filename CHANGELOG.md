@@ -1,3 +1,10 @@
+## [3.0.10](https://github.com/adobe/franklin-service/compare/v3.0.9...v3.0.10) (2023-02-01)
+
+
+### Bug Fixes
+
+* **deps:** update adobe major (major) ([#698](https://github.com/adobe/franklin-service/issues/698)) ([c3c265a](https://github.com/adobe/franklin-service/commit/c3c265acba65653bd78b1aa5d4a1ddc0445e9f31))
+
 ## [3.0.9](https://github.com/adobe/franklin-service/compare/v3.0.8...v3.0.9) (2023-01-30)
 
 
