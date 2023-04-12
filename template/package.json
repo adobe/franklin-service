@@ -43,7 +43,7 @@
   },
   "homepage": "https://github.com/adobe/franklin-service#readme",
   "dependencies": {
-    "@adobe/fetch": "4.0.6",
+    "@adobe/fetch": "4.0.7",
     "@adobe/helix-shared-wrap": "2.0.0",
     "@adobe/helix-status": "10.0.4",
     "@adobe/helix-universal-logger": "3.0.5"
