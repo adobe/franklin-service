@@ -38,7 +38,7 @@
     "@adobe/helix-status": "10.0.9",
     "@adobe/helix-universal-logger": "3.0.10",
     "dotenv": "16.0.3",
-    "yaml": "2.2.2"
+    "yaml": "2.3.1"
   },
   "devDependencies": {
     "@adobe/eslint-config-helix": "2.0.2",
