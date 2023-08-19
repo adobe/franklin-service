@@ -49,8 +49,8 @@
     "@adobe/helix-universal-logger": "3.0.10"
   },
   "devDependencies": {
-    "@adobe/eslint-config-helix": "2.0.2",
-    "@adobe/helix-deploy": "9.2.0",
+    "@adobe/eslint-config-helix": "2.0.3",
+    "@adobe/helix-deploy": "9.2.1",
     "@adobe/helix-universal": "4.3.0",
     "@adobe/semantic-release-coralogix": "1.1.25",
     "@semantic-release/changelog": "6.0.3",
