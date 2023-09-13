@@ -43,16 +43,16 @@
   },
   "homepage": "https://github.com/adobe/franklin-service#readme",
   "dependencies": {
-    "@adobe/fetch": "4.0.13",
+    "@adobe/fetch": "4.1.0",
     "@adobe/helix-shared-wrap": "2.0.0",
-    "@adobe/helix-status": "10.0.9",
-    "@adobe/helix-universal-logger": "3.0.10"
+    "@adobe/helix-status": "10.0.10",
+    "@adobe/helix-universal-logger": "3.0.11"
   },
   "devDependencies": {
     "@adobe/eslint-config-helix": "2.0.3",
-    "@adobe/helix-deploy": "9.3.1",
-    "@adobe/helix-universal": "4.3.0",
-    "@adobe/semantic-release-coralogix": "1.1.25",
+    "@adobe/helix-deploy": "9.3.3",
+    "@adobe/helix-universal": "4.3.1",
+    "@adobe/semantic-release-coralogix": "1.1.26",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
