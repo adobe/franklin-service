@@ -46,7 +46,7 @@
     "@adobe/fetch": "4.1.0",
     "@adobe/helix-shared-wrap": "2.0.0",
     "@adobe/helix-status": "10.0.10",
-    "@adobe/helix-universal-logger": "3.0.11"
+    "@adobe/helix-universal-logger": "3.0.12"
   },
   "devDependencies": {
     "@adobe/eslint-config-helix": "2.0.3",
