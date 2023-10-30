@@ -1,3 +1,10 @@
+## [3.0.30](https://github.com/adobe/franklin-service/compare/v3.0.29...v3.0.30) (2023-10-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/fetch to v4.1.1 ([#829](https://github.com/adobe/franklin-service/issues/829)) ([20bcd4c](https://github.com/adobe/franklin-service/commit/20bcd4c72a7e5b8a27b35f0c329cae606401901d))
+
 ## [3.0.29](https://github.com/adobe/franklin-service/compare/v3.0.28...v3.0.29) (2023-10-24)
 
 
