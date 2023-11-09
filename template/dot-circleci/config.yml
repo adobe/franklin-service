@@ -51,14 +51,6 @@ jobs:
           command: npm run semantic-release
       - store_test_results:
           path: junit
-      # see https://circleci.com/orbs/registry/orb/adobe/helix-post-deploy
-      # for more available parameters
-      # - helix-post-deploy/monitoring:
-      #     statuspage_name: Foo Service
-      #     statuspage_group: Internal Services
-      #     newrelic_group_policy: Development Repeated Failure
-      #     targets: aws
-      #     incubator: true # remove only when promoting service to production
 
   branch-deploy:
     executor: node18
