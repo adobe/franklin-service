@@ -1,3 +1,10 @@
+## [3.0.31](https://github.com/adobe/franklin-service/compare/v3.0.30...v3.0.31) (2023-11-09)
+
+
+### Bug Fixes
+
+* keep monitoring automation disabled by default ([#834](https://github.com/adobe/franklin-service/issues/834)) ([8d70975](https://github.com/adobe/franklin-service/commit/8d709757dcbb091eb18848e6dda0a9b4c2e02106))
+
 ## [3.0.30](https://github.com/adobe/franklin-service/compare/v3.0.29...v3.0.30) (2023-10-30)
 
 
