@@ -47,7 +47,7 @@
     "c8": "8.0.1",
     "eslint": "8.53.0",
     "husky": "8.0.3",
-    "lint-staged": "15.0.2",
+    "lint-staged": "15.1.0",
     "mocha": "10.2.0",
     "mocha-multi-reporters": "1.5.1",
     "semantic-release": "22.0.7"
