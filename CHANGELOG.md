@@ -1,3 +1,10 @@
+## [3.0.34](https://github.com/adobe/franklin-service/compare/v3.0.33...v3.0.34) (2024-01-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-shared-wrap to v2.0.1 ([#868](https://github.com/adobe/franklin-service/issues/868)) ([bff2fae](https://github.com/adobe/franklin-service/commit/bff2faed52365ac880c1ae319a13ae3675da2f9e))
+
 ## [3.0.33](https://github.com/adobe/franklin-service/compare/v3.0.32...v3.0.33) (2024-01-19)
 
 
