@@ -1,3 +1,10 @@
+## [3.0.36](https://github.com/adobe/franklin-service/compare/v3.0.35...v3.0.36) (2024-03-01)
+
+
+### Bug Fixes
+
+* update semver ([#890](https://github.com/adobe/franklin-service/issues/890)) ([664abf1](https://github.com/adobe/franklin-service/commit/664abf1966342ba9322d7248007e451fde482473))
+
 ## [3.0.35](https://github.com/adobe/franklin-service/compare/v3.0.34...v3.0.35) (2024-02-11)
 
 
