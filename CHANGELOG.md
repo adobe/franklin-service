@@ -1,3 +1,10 @@
+## [3.0.38](https://github.com/adobe/franklin-service/compare/v3.0.37...v3.0.38) (2024-03-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency yaml to v2.4.0 ([a9d6803](https://github.com/adobe/franklin-service/commit/a9d6803b7e84d7582de4ee770c58767a9fb94e67))
+
 ## [3.0.37](https://github.com/adobe/franklin-service/compare/v3.0.36...v3.0.37) (2024-03-01)
 
 
