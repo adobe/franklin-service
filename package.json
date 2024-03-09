@@ -1,6 +1,6 @@
 {
   "name": "@adobe/create-franklin-service",
-  "version": "3.0.38",
+  "version": "3.0.39",
   "private": false,
   "description": "Create Franklin Service",
   "main": "src/index.js",
