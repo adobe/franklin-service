@@ -62,6 +62,10 @@ jobs:
         run: npm run deploy-ci
       - name: Post-Deployment Integration Test
         run: npm run test-postdeploy
+      - name: Semantic Release (Dry Run)
+        run: npm run semantic-release-dry
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   release:
     name: Release
