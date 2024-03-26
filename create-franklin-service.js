@@ -11,34 +11,12 @@
  * governing permissions and limitations under the License.
  */
 import init from '@adobe/create-franklin-library';
-import yaml from 'yaml';
 import { resolve } from 'path';
 import { fileURLToPath } from 'url';
-
-function setValue(node, val) {
-  // eslint-disable-next-line no-param-reassign
-  node.value.value = val;
-}
 
 // eslint-disable-next-line no-console
 console.log('Creating a new Franklin Service');
 init(resolve(fileURLToPath(import.meta.url), '..'), {
-  'dot-circleci/config.yml': (buf, answers) => {
-    const doc = yaml.parseDocument(buf.toString());
-    const monitoring = doc.contents.items
-      .filter((item) => item.key.value === 'jobs')[0].value.items
-      .filter((item) => item.key.value === 'semantic-release')[0].value.items
-      .filter((item) => item.key.value === 'steps')[0].value.items
-      .filter((item) => item?.items?.[0]?.key?.value === 'helix-post-deploy/monitoring')[0].items[0].value.items;
-
-    const [name, group, policy] = monitoring;
-
-    setValue(name, answers.title);
-    setValue(group, answers.alertgroup);
-    setValue(policy, `${answers.alertgroup} Repeated Failure`);
-
-    return Buffer.from(doc.toString());
-  },
   'package.json': (buf, answers) => {
     const json = JSON.parse(buf.toString());
     json.name = answers.fullscope;
@@ -64,6 +42,7 @@ init(resolve(fileURLToPath(import.meta.url), '..'), {
     return Buffer.from(updated);
   },
   'dot-releaserc.cjs': (buf) => buf,
+  'dot-github/workflows/main.yaml': (buf) => buf,
 }, [
   {
     type: 'list',

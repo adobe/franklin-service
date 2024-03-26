@@ -4,7 +4,7 @@
 
 ## Status
 [![codecov](https://img.shields.io/codecov/c/github/adobe/franklin-service.svg)](https://codecov.io/gh/adobe/franklin-service)
-[![CircleCI](https://img.shields.io/circleci/project/github/adobe/franklin-service.svg)](https://circleci.com/gh/adobe/franklin-service)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/adobe/franklin-service/main.yaml)](https://github.com/adobe/franklin-service/actions/workflows/main.yaml)
 [![GitHub license](https://img.shields.io/github/license/adobe/franklin-service.svg)](https://github.com/adobe/franklin-service/blob/main/LICENSE.txt)
 [![GitHub issues](https://img.shields.io/github/issues/adobe/franklin-service.svg)](https://github.com/adobe/franklin-service/issues)
 [![LGTM Code Quality Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/adobe/franklin-service.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/adobe/franklin-service)
