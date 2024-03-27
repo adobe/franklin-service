@@ -1,3 +1,10 @@
+## [3.0.42](https://github.com/adobe/franklin-service/compare/v3.0.41...v3.0.42) (2024-03-27)
+
+
+### Bug Fixes
+
+* use github actions for service deployment ([#900](https://github.com/adobe/franklin-service/issues/900)) ([729c936](https://github.com/adobe/franklin-service/commit/729c936f7168802bbaf81534b53b01f2c89b6a8d))
+
 ## [3.0.41](https://github.com/adobe/franklin-service/compare/v3.0.40...v3.0.41) (2024-03-26)
 
 
