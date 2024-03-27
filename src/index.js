@@ -10,23 +10,20 @@
  * governing permissions and limitations under the License.
  */
 import wrap from '@adobe/helix-shared-wrap';
-import { logger } from '@adobe/helix-universal-logger';
 import { helixStatus } from '@adobe/helix-status';
 import { Response } from '@adobe/fetch';
 
 /**
  * This is the main function
  * @param {Request} request the request object (see fetch api)
- * @param {UniversalContext} context the context of the universal serverless function
+ * @param {UniversalContext} ctx the context of the universal serverless function
  * @returns {Response} a response
  */
-function run(request, context) {
+function run(request, ctx) {
   const name = new URL(request.url).searchParams.get('name') || 'world';
-  context.log.info(`Saying hello to: ${name}.`);
+  ctx.log.info(`Saying hello to: ${name}.`);
   return new Response(`Hello, ${name}.`);
 }
 
 export const main = wrap(run)
-  .with(helixStatus)
-  .with(logger.trace)
-  .with(logger);
+  .with(helixStatus);
