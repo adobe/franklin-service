@@ -44,13 +44,13 @@
   },
   "homepage": "https://github.com/adobe/franklin-service#readme",
   "dependencies": {
-    "@adobe/fetch": "4.1.1",
+    "@adobe/fetch": "4.1.2",
     "@adobe/helix-shared-wrap": "2.0.1",
     "@adobe/helix-status": "10.0.11"
   },
   "devDependencies": {
     "@adobe/eslint-config-helix": "2.0.6",
-    "@adobe/helix-deploy": "11.0.17",
+    "@adobe/helix-deploy": "11.0.19",
     "@adobe/helix-universal": "4.5.0",
     "@adobe/semantic-release-coralogix": "1.1.27",
     "@semantic-release/changelog": "6.0.3",
