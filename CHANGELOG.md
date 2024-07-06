@@ -1,3 +1,10 @@
+## [3.0.54](https://github.com/adobe/franklin-service/compare/v3.0.53...v3.0.54) (2024-07-06)
+
+
+### Bug Fixes
+
+* **deps:** update adobe fixes ([41eb136](https://github.com/adobe/franklin-service/commit/41eb13643fcc236f1a50aee1cc6188261e38d1db))
+
 ## [3.0.53](https://github.com/adobe/franklin-service/compare/v3.0.52...v3.0.53) (2024-06-29)
 
 
