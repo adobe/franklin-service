@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/adobe/franklin-service#readme",
   "dependencies": {
-    "@adobe/create-franklin-library": "3.1.14",
+    "@adobe/create-franklin-library": "3.1.15",
     "@adobe/fetch": "4.1.8",
     "@adobe/helix-shared-wrap": "2.0.2",
     "@adobe/helix-status": "10.1.2",
@@ -41,7 +41,7 @@
     "dotenv": "16.4.5"
   },
   "devDependencies": {
-    "@adobe/eslint-config-helix": "2.0.6",
+    "@adobe/eslint-config-helix": "2.0.7",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "c8": "10.1.2",
