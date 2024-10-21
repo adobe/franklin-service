@@ -1,3 +1,10 @@
+## [3.0.64](https://github.com/adobe/franklin-service/compare/v3.0.63...v3.0.64) (2024-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/helix-universal-logger to v3.0.21 ([#984](https://github.com/adobe/franklin-service/issues/984)) ([561bb3f](https://github.com/adobe/franklin-service/commit/561bb3fc8009da9beec8c53356584071cf2e0d58))
+
 ## [3.0.63](https://github.com/adobe/franklin-service/compare/v3.0.62...v3.0.63) (2024-10-07)
 
 
