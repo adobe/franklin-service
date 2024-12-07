@@ -57,7 +57,7 @@
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "c8": "10.1.2",
-    "dotenv": "16.4.5",
+    "dotenv": "16.4.7",
     "eslint": "8.57.1",
     "husky": "9.1.7",
     "junit-report-builder": "5.1.1",
