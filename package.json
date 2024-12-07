@@ -38,7 +38,7 @@
     "@adobe/helix-shared-wrap": "2.0.2",
     "@adobe/helix-status": "10.1.4",
     "@adobe/helix-universal-logger": "3.0.22",
-    "dotenv": "16.4.5"
+    "dotenv": "16.4.7"
   },
   "devDependencies": {
     "@adobe/eslint-config-helix": "2.0.8",
