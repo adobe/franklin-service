@@ -33,11 +33,11 @@
   },
   "homepage": "https://github.com/adobe/franklin-service#readme",
   "dependencies": {
-    "@adobe/create-franklin-library": "3.1.19",
-    "@adobe/fetch": "4.1.10",
+    "@adobe/create-franklin-library": "3.1.20",
+    "@adobe/fetch": "4.1.11",
     "@adobe/helix-shared-wrap": "2.0.2",
-    "@adobe/helix-status": "10.1.4",
-    "@adobe/helix-universal-logger": "3.0.22",
+    "@adobe/helix-status": "10.1.5",
+    "@adobe/helix-universal-logger": "3.0.23",
     "dotenv": "16.4.7"
   },
   "devDependencies": {
