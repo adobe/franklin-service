@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/adobe/franklin-service#readme",
   "dependencies": {
-    "@adobe/create-franklin-library": "3.1.20",
+    "@adobe/create-franklin-library": "3.1.21",
     "@adobe/fetch": "4.1.11",
     "@adobe/helix-shared-wrap": "2.0.2",
     "@adobe/helix-status": "10.1.5",
