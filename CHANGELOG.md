@@ -1,3 +1,10 @@
+## [3.0.77](https://github.com/adobe/franklin-service/compare/v3.0.76...v3.0.77) (2025-04-14)
+
+
+### Bug Fixes
+
+* **deps:** update external fixes ([#1041](https://github.com/adobe/franklin-service/issues/1041)) ([6813fb2](https://github.com/adobe/franklin-service/commit/6813fb2db3abb4d39dc0be0b75dd15b44e813afb))
+
 ## [3.0.76](https://github.com/adobe/franklin-service/compare/v3.0.75...v3.0.76) (2025-04-08)
 
 
