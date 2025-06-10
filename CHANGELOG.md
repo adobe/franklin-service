@@ -1,3 +1,10 @@
+## [3.0.83](https://github.com/adobe/franklin-service/compare/v3.0.82...v3.0.83) (2025-06-10)
+
+
+### Bug Fixes
+
+* use eslint v9 in template ([#1065](https://github.com/adobe/franklin-service/issues/1065)) ([2de49e4](https://github.com/adobe/franklin-service/commit/2de49e466031dfcbc5e560aeb880f004cc910732))
+
 ## [3.0.82](https://github.com/adobe/franklin-service/compare/v3.0.81...v3.0.82) (2025-05-26)
 
 
