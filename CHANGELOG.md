@@ -1,3 +1,10 @@
+## [3.0.84](https://github.com/adobe/franklin-service/compare/v3.0.83...v3.0.84) (2025-06-17)
+
+
+### Bug Fixes
+
+* **release:** release icon url ([ecae9ad](https://github.com/adobe/franklin-service/commit/ecae9adfb506ae5847d84ac8832ccdd1f5a695d1))
+
 ## [3.0.83](https://github.com/adobe/franklin-service/compare/v3.0.82...v3.0.83) (2025-06-10)
 
 
