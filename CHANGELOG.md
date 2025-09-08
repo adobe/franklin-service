@@ -1,3 +1,10 @@
+## [3.0.95](https://github.com/adobe/franklin-service/compare/v3.0.94...v3.0.95) (2025-09-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency dotenv to v17.2.2 ([#1097](https://github.com/adobe/franklin-service/issues/1097)) ([c144178](https://github.com/adobe/franklin-service/commit/c144178100925cde8a9f46e5aafe9c93b825d278))
+
 ## [3.0.94](https://github.com/adobe/franklin-service/compare/v3.0.93...v3.0.94) (2025-08-26)
 
 
