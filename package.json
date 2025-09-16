@@ -37,7 +37,7 @@
     "@adobe/fetch": "4.2.3",
     "@adobe/helix-shared-wrap": "2.0.2",
     "@adobe/helix-status": "10.1.5",
-    "@adobe/helix-universal-logger": "3.0.27",
+    "@adobe/helix-universal-logger": "3.0.28",
     "dotenv": "17.2.2"
   },
   "devDependencies": {
