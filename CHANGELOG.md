@@ -1,3 +1,10 @@
+## [3.0.99](https://github.com/adobe/franklin-service/compare/v3.0.98...v3.0.99) (2025-09-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/create-franklin-library to v3.1.40 ([#1102](https://github.com/adobe/franklin-service/issues/1102)) ([0c62d3c](https://github.com/adobe/franklin-service/commit/0c62d3c1f725080775059384c4e567a5e957a47d))
+
 ## [3.0.98](https://github.com/adobe/franklin-service/compare/v3.0.97...v3.0.98) (2025-09-16)
 
 
