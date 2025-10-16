@@ -1,3 +1,10 @@
+## [3.0.100](https://github.com/adobe/franklin-service/compare/v3.0.99...v3.0.100) (2025-10-16)
+
+
+### Bug Fixes
+
+* update semantic-release to v25 and node to 24.x for OIDC ([365ac1a](https://github.com/adobe/franklin-service/commit/365ac1aff451b256a5d212bb8514bb4fa2569226))
+
 ## [3.0.99](https://github.com/adobe/franklin-service/compare/v3.0.98...v3.0.99) (2025-09-16)
 
 
